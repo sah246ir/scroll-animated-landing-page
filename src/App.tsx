@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
 import VideoScrollSection from './section/VideoScrollSection';
+import { HoverProvider } from './ContextProviders/HoverWrapperProvider';
+ 
 
 
-function App() { 
+function App() {  
   return (
-    <div>
+    <HoverProvider>
       <VideoScrollSection />
-    </div>
+    </HoverProvider>
   );
 }
 
