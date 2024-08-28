@@ -12,6 +12,7 @@ const SpecialHoverButton = ({ children, className }: PropTypes) => {
   return (
       <button
         onMouseEnter={(e) => a?.updateWrapperPosition(e)}
+        onMouseLeave={()=>a?.onLeave()}
         className={'text-inherit rounded-full  bg-gray-300 bg-opacity-0 relative z-20 ' + className}
       >
         {children && children} 
