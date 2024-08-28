@@ -62,9 +62,13 @@ const VideoScrollSection = () => {
             </motion.div>
           </div>
           <div className="max-w-[54vw]">
-            <h1 style={{wordSpacing:"8px"}} className='text-5xl text-black'>
-            Wokine conçoit des solutions et expériences digitales qui allient <SpecialHoverButton>créativité</SpecialHoverButton> , <SpecialHoverButton>technologie</SpecialHoverButton>  et engagement <SpecialHoverButton>éthique</SpecialHoverButton>  . 
-              </h1>
+            <h1 style={{wordSpacing:"8px"}} className='text-4xl text-black'>
+            Wokine conçoit des solutions et expériences digitales qui allient&nbsp; 
+            <SpecialHoverButton className='my-[.5px]' >créativité</SpecialHoverButton> , 
+            <SpecialHoverButton className='my-[.5px]'>technologie</SpecialHoverButton>&nbsp;  
+            et engagement&nbsp;
+            <SpecialHoverButton className='my-[.5px]'>éthique</SpecialHoverButton>  . 
+             </h1>
           </div>
         </div>
       </section>
