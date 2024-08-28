@@ -1,8 +1,9 @@
-import React, { createContext, ReactNode, useRef } from 'react';
+import React, { createContext, ReactNode, useState } from 'react';
 
 // Define the type for the context value
 interface HoverContextType {
     updateWrapperPosition: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
+    onLeave: () => void;
 }
 
 // Create the context with a default value
@@ -10,29 +11,40 @@ export const HoverWrapperContext = createContext<HoverContextType | undefined>(u
 
 // Provider component
 export const HoverProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const buttonWrapperRef = useRef<HTMLDivElement>(null);
+  // State for managing the position and size of the background div
+  const [style, setStyle] = useState<React.CSSProperties>({});
 
   const updateWrapperPosition = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
-    if (buttonWrapperRef.current) {
-      const target = e.currentTarget.getBoundingClientRect();
+    const target = e.currentTarget.getBoundingClientRect();
 
-      // Calculate the mouse position relative to the page
-      const x = (target.left-11) + window.scrollX;
-      const y = (target.top-6) + window.scrollY;
+    // Calculate the position and size
+    const x = (target.left - 11) + window.scrollX;
+    const y = (target.top - 6) + window.scrollY;
+    const width = target.width + 22;
+    const height = target.height + 12;
 
-      // Set the background div's position and size to match the button relative to the page
-      buttonWrapperRef.current.style.transform = `translate(${x}px, ${y}px)`;
-      buttonWrapperRef.current.style.width = `${target.width+22}px`;
-      buttonWrapperRef.current.style.height = `${target.height+12}px`;
-    }
+    // Update the style state
+    setStyle({
+      opacity: 1,
+      transform: `translate(${x}px, ${y}px)`,
+      width: `${width}px`,
+      height: `${height}px`,
+    });
   };
 
+  const onLeave = ()=>{
+    setStyle({
+      ...style,
+      opacity:0
+    })
+  }
   return (
-    <HoverWrapperContext.Provider value={{ updateWrapperPosition }}>
-      <div ref={buttonWrapperRef} className="bg-lime-200 absolute rounded-full z-0 pointer-events-none transition-all duration-300 left-0 top-0"></div>
+    <HoverWrapperContext.Provider value={{ updateWrapperPosition,onLeave }}>
+      <div
+        style={style}
+        className="absolute rounded-full bg-lime-300 z-0 pointer-events-none transition-all duration-300"
+      />
       <div className="z-40">{children}</div>
     </HoverWrapperContext.Provider>
   );
 };
-
- 
