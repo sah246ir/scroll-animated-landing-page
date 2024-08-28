@@ -3,7 +3,7 @@ import React, { createContext, ReactNode, useState } from 'react';
 // Define the type for the context value
 interface HoverContextType {
     updateWrapperPosition: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
-    onLeave: () => void;
+    onLeave: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
 }
 
 // Create the context with a default value
@@ -18,12 +18,13 @@ export const HoverProvider: React.FC<{ children: ReactNode }> = ({ children }) =
     const target = e.currentTarget.getBoundingClientRect();
 
     // Calculate the position and size
-    const x = (target.left - 11) + window.scrollX;
-    const y = (target.top - 6) + window.scrollY;
-    const width = target.width + 22;
-    const height = target.height + 12;
+    const x = (target.left) + window.scrollX;
+    const y = (target.top) + window.scrollY;
+    const width = target.width ;
+    const height = target.height;
 
     // Update the style state
+    e.currentTarget.classList.add("bg-opacity-0")
     setStyle({
       opacity: 1,
       transform: `translate(${x}px, ${y}px)`,
@@ -32,7 +33,10 @@ export const HoverProvider: React.FC<{ children: ReactNode }> = ({ children }) =
     });
   };
 
-  const onLeave = ()=>{
+  const onLeave = (e: React.MouseEvent<HTMLElement, MouseEvent>)=>{
+    e.currentTarget.classList.remove("transition")
+    e.currentTarget.classList.remove("bg-opacity-0")
+    e.currentTarget.classList.add("transition")
     setStyle({
       ...style,
       opacity:0
