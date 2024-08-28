@@ -69,7 +69,6 @@ const VideoScrollSection = () => {
         </div>
       </section>
 
-      <div className="min-h-[1200px]"></div>
     </>
   )
 }
