@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { HoverWrapperContext } from '../ContextProviders/HoverWrapperProvider';
+import { HoverWrapperContext } from '../../ContextProviders/HoverWrapperProvider';
 
 interface PropTypes {
   children?: React.ReactNode;
@@ -10,7 +10,6 @@ const SpecialHoverButton = ({ children, className }: PropTypes) => {
   const a = useContext(HoverWrapperContext) 
 
   return (
-      <div className='inline'>
         <button
           onMouseEnter={(e) => a?.updateWrapperPosition(e)}
           onMouseLeave={(e)=>a?.onLeave(e)}
@@ -18,7 +17,6 @@ const SpecialHoverButton = ({ children, className }: PropTypes) => {
         >
           {children && children}
         </button>
-      </div>
   );
 };
 
