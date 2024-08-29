@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { motion, useMotionValueEvent, useScroll, useTransform } from 'framer-motion';
-import SpecialHoverButton from '../components/SpecialHoverButton';
+import { motion, useMotionValueEvent, useScroll,  useTransform } from 'framer-motion';
+import SmartParagraph from '../components/smartParagraph';
 
 const vid = require("../../src/media/vid.mp4");
 
@@ -52,9 +52,10 @@ const VideoScrollSection = () => {
   useMotionValueEvent(width, "change", (latest) => {
     setCurrentwidth(latest)
   })
+ 
   return (
     <>
-      <section className=" bg-white p-8 pb-16">
+      <section className=" bg-white p-8 pb-24">
         <div ref={containerref} className="relative min-h-[2000px] h-[2000px] flex items-end">
           <div className=" absolute bottom-0 right-0 min-h-[2000px] h-[2000px] flex items-end" >
             <motion.div style={{ width, height, transition: "200ms" }} className="sticky bottom-10 right-0">
@@ -62,13 +63,9 @@ const VideoScrollSection = () => {
             </motion.div>
           </div>
           <div className="max-w-[54vw]">
-            <h1 style={{wordSpacing:"8px"}} className='text-[4.5vw] text-black'>
-            Wokine conçoit des solutions et expériences digitales qui allient&nbsp; 
-            <SpecialHoverButton className='my-[.5px]' >créativité</SpecialHoverButton> , 
-            <SpecialHoverButton className='my-[.5px]'>technologie</SpecialHoverButton>&nbsp;  
-            et engagement&nbsp;
-            <SpecialHoverButton className='my-[.5px]'>éthique</SpecialHoverButton>  . 
-             </h1>
+
+              <SmartParagraph />
+
           </div>
         </div>
       </section>
