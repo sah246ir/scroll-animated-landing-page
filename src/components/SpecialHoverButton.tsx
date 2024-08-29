@@ -10,13 +10,15 @@ const SpecialHoverButton = ({ children, className }: PropTypes) => {
   const a = useContext(HoverWrapperContext) 
 
   return (
-      <button
-        onMouseEnter={(e) => a?.updateWrapperPosition(e)}
-        onMouseLeave={(e)=>a?.onLeave(e)}
-        className={'text-inherit rounded-full bg-gray-300 relative z-20 transition duration-300 px-3 py-1 ' + className}
-      >
-        {children && children} 
-      </button> 
+      <div className='inline'>
+        <button
+          onMouseEnter={(e) => a?.updateWrapperPosition(e)}
+          onMouseLeave={(e)=>a?.onLeave(e)}
+          className={'text-inherit rounded-full bg-gray-100 relative z-20 transition duration-300 text-left ' + className}
+        >
+          {children && children}
+        </button>
+      </div>
   );
 };
 
