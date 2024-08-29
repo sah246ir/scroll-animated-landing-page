@@ -62,7 +62,7 @@ const VideoScrollSection = () => {
             </motion.div>
           </div>
           <div className="max-w-[54vw]">
-            <h1 style={{wordSpacing:"8px"}} className='text-4xl text-black'>
+            <h1 style={{wordSpacing:"8px"}} className='text-[4.5vw] text-black'>
             Wokine conçoit des solutions et expériences digitales qui allient&nbsp; 
             <SpecialHoverButton className='my-[.5px]' >créativité</SpecialHoverButton> , 
             <SpecialHoverButton className='my-[.5px]'>technologie</SpecialHoverButton>&nbsp;  
