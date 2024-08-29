@@ -18,10 +18,10 @@ export const HoverProvider: React.FC<{ children: ReactNode }> = ({ children }) =
     const target = e.currentTarget.getBoundingClientRect();
 
     // Calculate the position and size
-    const x = (target.left-18) + window.scrollX;
-    const y = (target.top-6) + window.scrollY;
-    const width = target.width+36 ;
-    const height = target.height+12;
+    const x = (target.left) + window.scrollX;
+    const y = (target.top) + window.scrollY;
+    const width = target.width ;
+    const height = target.height;
 
     // Update the style state
     e.currentTarget.classList.add("bg-opacity-0")
