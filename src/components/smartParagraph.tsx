@@ -11,7 +11,7 @@ const SmartParagraph = () => {
     return (
         <motion.p
             ref={element}
-            className="text-[4ch] text-black text-left max-w-[54vw]"
+            className="text-[4.5vw] text-black text-left max-w-[54vw]"
         >
             <Sentence scrollYProgress={scrollYProgress} sentence='Wokine
                 conçoit
