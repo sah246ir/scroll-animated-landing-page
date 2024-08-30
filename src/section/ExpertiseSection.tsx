@@ -1,16 +1,16 @@
 import React from 'react'
 import SpecialHoverButton from '../components/buttons/SpecialHoverButton'
 import Button from '../components/buttons/Button'
+import SectionHeading from '../components/SectionHeading'
 
 const ExpertiseSection = () => {
     return (
         <div className='py-20 px-5 bg-gray-200 flex justify-around'>
             <div className='sticky top-10'>
                 <div className="sticky top-10 max-w-[180px] flex flex-col gap-3">
-                    <div className='flex items-center gap-3'>
-                        <div className='bg-black size-2 rounded-full  ' />
-                        <p className='text-sm'>Our Expertise</p>
-                    </div>
+                    <SectionHeading>
+                         Our Expertise 
+                    </SectionHeading>
                     <p>Des compétences au service de votre performance</p>
                     <div className='mt-4 font-light text-sm'>
                         <Button>Toutes nos expertises</Button>
