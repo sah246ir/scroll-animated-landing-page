@@ -3,10 +3,11 @@ import React  from 'react'
 interface PropTypes{
     children:React.ReactNode,
     closeInUnderline?:boolean
+    className?:string
 }
-const Button = ({children,closeInUnderline=true}:PropTypes) => {
+const Button = ({children,className,closeInUnderline=true}:PropTypes) => {
   return (
-    <button className={`${closeInUnderline && "close-in-underline"}`}>
+    <button className={`${closeInUnderline && "close-in-underline"} ${className}`}>
       {children}
     </button>
   )
