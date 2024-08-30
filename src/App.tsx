@@ -6,6 +6,7 @@ import ExpertiseSection from './section/ExpertiseSection';
 import Navbar from './components/Navbar';
 import InsideSection from './section/InsideSection';
 import RecognitionSection from './section/RecognitionSection';
+import ApprochSection from './section/ApprochSection';
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <HoverProvider>
         <VideoScrollSection />
         <ExpertiseSection />
+        <ApprochSection />
         <RecognitionSection />
         <InsideSection />
       </HoverProvider>
