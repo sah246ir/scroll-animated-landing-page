@@ -1,7 +1,7 @@
 import React from 'react'
 import SpecialHoverButton from '../components/buttons/SpecialHoverButton'
 import Button from '../components/buttons/Button'
-import SectionHeading from '../components/SectionHeading'
+import SectionHeading from '../components/headings/SectionHeading'
 
 const ExpertiseSection = () => {
     return (
