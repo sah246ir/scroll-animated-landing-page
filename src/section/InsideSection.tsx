@@ -34,7 +34,7 @@ const InsideSection = () => {
     const y = useTransform(
         scrollYProgress,
         [0,1],
-        [600,0 ], 
+        [500,0 ], 
     )
     const x = useTransform(scrollYProgress, [0, 1], [-200, 0]);
     const revx = useTransform(scrollYProgress, [0, 1], [0, -200]);
