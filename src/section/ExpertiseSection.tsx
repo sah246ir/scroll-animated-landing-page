@@ -17,7 +17,7 @@ const ExpertiseSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-6xl tracking-wider group flex flex-col before:">
+            <div className="text-6xl tracking-wider group flex flex-col before: items-start">
                 <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black">Digital strategy</SpecialHoverButton>
                 <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black">Data</SpecialHoverButton>
                 <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black">E-commerce</SpecialHoverButton>

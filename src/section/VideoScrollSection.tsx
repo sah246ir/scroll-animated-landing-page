@@ -46,7 +46,7 @@ const VideoScrollSection = () => {
   const height = useTransform(
     scrollYProgress,
     [0, 0.5, 1],
-    [Dimensions.height - 1200, 500, minHeight],
+    [Dimensions.height - 1100, 500, minHeight],
   );
 
   useMotionValueEvent(width, "change", (latest) => {
@@ -55,7 +55,7 @@ const VideoScrollSection = () => {
  
   return (
     <>
-      <section className=" bg-white p-8 pb-24">
+      <section className=" bg-white p-5 pb-24">
         <div ref={containerref} className="relative min-h-[2000px] h-[2000px] flex items-end">
           <div className=" absolute bottom-0 right-0 min-h-[2000px] h-[2000px] flex items-end" >
             <motion.div style={{ width, height, transition: "200ms" }} className="sticky bottom-10 right-0">
