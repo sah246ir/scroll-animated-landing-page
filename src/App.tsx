@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import InsideSection from './section/InsideSection';
 import RecognitionSection from './section/RecognitionSection';
 import ApprochSection from './section/ApprochSection';
+import FooterSection from './section/FooterSection';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <ApprochSection />
         <RecognitionSection />
         <InsideSection />
+        <FooterSection />
       </HoverProvider>
     </>
   );

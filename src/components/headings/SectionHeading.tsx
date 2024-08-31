@@ -3,11 +3,12 @@ import React from 'react'
 interface PropTypes{
     children:React.ReactNode
     className?:string
+    bullet?:boolean
 }
-const SectionHeading = ({children,className}:PropTypes) => {
+const SectionHeading = ({children,className,bullet=true}:PropTypes) => {
     return (
         <div className={'flex items-center gap-3 ' + className}>
-            <div className='bg-black size-2 rounded-full  ' />
+            {bullet && <div className='bg-black size-2 rounded-full  ' />}
             <p className={'text-sm '}>{children}</p>
         </div>
     )
