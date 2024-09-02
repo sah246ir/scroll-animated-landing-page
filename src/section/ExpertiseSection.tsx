@@ -5,8 +5,8 @@ import SectionHeading from '../components/headings/SectionHeading'
 
 const ExpertiseSection = () => {
     return (
-        <div className='py-20 px-5 bg-gray-200 flex justify-around'>
-            <div className='sticky top-10'>
+        <div className='py-20 px-5 bg-gray-200 flex flex-col sm:flex-row items-center sm:items-start gap-5 justify-around'>
+            <div className='sm:sticky top-10'>
                 <div className="sticky top-10 max-w-[180px] flex flex-col gap-3">
                     <SectionHeading>
                          Our Expertise 
@@ -17,14 +17,14 @@ const ExpertiseSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-6xl tracking-wider group flex flex-col before: items-start">
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black">Digital strategy</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black">Data</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black">E-commerce</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black">Extranet / Intranet</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black">Web development</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black">Creative concept</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black">User experience</SpecialHoverButton>
+            <div className="text-6xl tracking-wider group flex flex-col gap-7 sm:gap-0 ">
+                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">Digital strategy</SpecialHoverButton>
+                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">Data</SpecialHoverButton>
+                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">E-commerce</SpecialHoverButton>
+                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">Extranet / Intranet</SpecialHoverButton>
+                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">Web development</SpecialHoverButton>
+                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">Creative concept</SpecialHoverButton>
+                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">User experience</SpecialHoverButton>
             </div>
 
         </div>

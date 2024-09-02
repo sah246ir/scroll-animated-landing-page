@@ -68,7 +68,7 @@ const InsideSection = () => {
             <motion.div  
             style={{y}}
             ref={element} 
-            className='flex gap-14 h-screen p-5 py-12' 
+            className='flex gap-14 h-screen p-5 py-12 flex-col md:flex-row' 
             >
                 <motion.article
                 className="h-full flex-grow bg-gray-400 transition duration-100 z-20 relative"

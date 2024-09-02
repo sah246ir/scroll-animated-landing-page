@@ -31,7 +31,7 @@ const gallery:Potrait[][] = [
 ];
 const GallerySection = () => {
     const element = useRef<HTMLDivElement>(null)
-    const [hovered,setHover] = useState<number[] | null>([])
+    const [hovered,setHover] = useState<number[] | null>(null)
     const {scrollYProgress} = useScroll({
         target:element
     })
@@ -44,12 +44,12 @@ const GallerySection = () => {
     return (
         <section style={{ backgroundColor: "#181717" }} className='p-9 py-12   text-white gap-16'>
             <SectionHeading>Our portfolio</SectionHeading>
-            <h1 className='text-[10ch] whitespace-nowrap text-center mb-7'>
+            <h1 className='text-[5vw] whitespace-nowrap text-center mb-7'>
                 <Star size={35} className='inline fill-gray-300'/> 
                 &nbsp;
                 Our portfolio
-            </h1>
-            <div className="flex justify-between mb-3">
+            </h1> 
+            <div className="flex gap-3 flex-wrap justify-between mb-3">
                 <GalleryFilter>Category</GalleryFilter>
                 <GalleryFilter>Category</GalleryFilter>
                 <GalleryFilter>Category</GalleryFilter>
@@ -60,7 +60,7 @@ const GallerySection = () => {
                 <GalleryFilter>Category</GalleryFilter>
                 <GalleryFilter>Category</GalleryFilter>
             </div>
-            <div   ref={element} className="gallery flex gap-5">
+            <div   ref={element} className="gallery flex flex-col sm:flex-row sm:gap-5">
                 {gallery.map((grp,i)=>{
                     return(
                         <motion.div style={{...(i!==1 && {y})}} className="flex flex-col gap-8">
