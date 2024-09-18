@@ -18,13 +18,13 @@ const ExpertiseSection = () => {
                 </div>
             </div>
             <div className="text-6xl tracking-wider group flex flex-col gap-7 sm:gap-0 ">
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">Digital strategy</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">Data</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">E-commerce</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">Extranet / Intranet</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">Web development</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">Creative concept</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">User experience</SpecialHoverButton>
+                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">E-learning</SpecialHoverButton>
+                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">Illustration</SpecialHoverButton>
+                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">Animations</SpecialHoverButton>
+                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">Translation</SpecialHoverButton>
+                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">Audio & Video</SpecialHoverButton>
+                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">Corporate Presentations</SpecialHoverButton>
+                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:text-gray-400 hover:!text-black text-center sm:text-left">E-Publishing</SpecialHoverButton>
             </div>
 
         </div>

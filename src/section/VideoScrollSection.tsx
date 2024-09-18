@@ -64,7 +64,7 @@ const VideoScrollSection = () => {
           </div>
           <div className="max-w-[54vw]">
 
-              <SmartParagraph />
+              <SmartParagraph text={`In a world where the ordinary is often accepted as the norm, we dare to look beyond—to envision what lies outside the conventional boundaries of creativity and technology.`} />
 
           </div>
         </div>

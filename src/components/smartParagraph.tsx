@@ -1,7 +1,10 @@
 import { motion, MotionValue, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 
-const SmartParagraph = () => {
+interface PropTypes{
+    text?:string
+}
+const SmartParagraph = ({text}:PropTypes) => {
     const element = useRef(null)
     const { scrollYProgress } = useScroll({
         target: element,
@@ -11,25 +14,10 @@ const SmartParagraph = () => {
     return (
         <motion.p
             ref={element}
-            className="text-[4.5vw] text-black text-left max-w-[54vw]"
+            className="text-[3.5vw] text-black text-left max-w-[54vw]"
         >
-            <Sentence scrollYProgress={scrollYProgress} sentence='Wokine
-                conçoit
-                des
-                solutions
-                et
-                expériences
-                digitales
-                qui
-                allient
-                créativité
-                ,
-                technologie
-                et
-                engagement
-                éthique
-                .
-                ' 
+            <Sentence scrollYProgress={scrollYProgress} sentence={
+               text || `Wokine conçoit des solutions et expériences digitales qui allient créativité, technologie et engagement éthiquse.`}
             />
 
         </motion.p>
