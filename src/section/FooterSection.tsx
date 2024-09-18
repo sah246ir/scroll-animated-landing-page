@@ -3,21 +3,22 @@ import Button from '../components/buttons/Button';
 import SectionHeading from '../components/headings/SectionHeading';
 
 const vid = require("../../src/media/vid.mp4");
-
+const logo = require("../media/logo-2.png")
 const FooterSection = () => {
   return (
     <section style={{backgroundColor:"#181717"}} className='p-9 py-12 flex justify-between min-h-[450px] text-white gap-16 flex-col sm:flex-row items-center sm:items-stretch text-center sm:text-left'>
       <div className='flex min-h-full gap-6 flex-col justify-between items-center sm:items-start max-w-[410px]'>
         <div className=''>
-            <h1>LOGO</h1>
-            <h2 className='text-2xl'>
-                Wokine designs digital solutions and experiences that combine creativity, technology and ethical engagement.
+          <img width={162} src={logo} className='rounded-md' alt="" />
+            <h2 className='text-2xl  mt-5'>
+            Creating marvelous user experience
+            for your brand, seamlessly.
             </h2>
         </div>
-        <video loop autoPlay src={vid} width={155}></video>
+        <video loop autoPlay src={vid} width={175} className='transition duration-300 hover:scale-110'></video>
       </div>
       <div className='flex flex-col justify-around items-end  gap-7 w-[50%]'>
-        <div className='flex flex-wrap flex-col sm:flex-row items-center text-white gap-12 sm:gap-6 w-full justify-between'>
+        <div className='flex flex-wrap flex-col sm:flex-row  text-white gap-12 sm:gap-6 w-full justify-between'>
             <div>
               <SectionHeading className='mb-7' bullet={false}>READ MORE</SectionHeading>
               <ul className='transition duration-300 text-lg space-y-2  hover:text-gray-800'>
