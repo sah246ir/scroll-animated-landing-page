@@ -1,7 +1,7 @@
 import React from 'react'
-import SpecialHoverButton from '../components/buttons/SpecialHoverButton'
 import Button from '../components/buttons/Button'
 import SectionHeading from '../components/headings/SectionHeading'
+import Expertise from '../components/Expertise'
 
 const ExpertiseSection = () => {
     return (
@@ -18,13 +18,13 @@ const ExpertiseSection = () => {
                 </div>
             </div>
             <div className="text-6xl tracking-wider group flex flex-col gap-7 sm:gap-0 ">
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:opacity-35 hover:!opacity-100 text-orange-500 text-center sm:text-left">E-learning</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:opacity-35 hover:!opacity-100 text-orange-500 text-center sm:text-left">Illustration</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:opacity-35 hover:!opacity-100 text-orange-500 text-center sm:text-left">Animations</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:opacity-35 hover:!opacity-100 text-orange-500 text-center sm:text-left">Translation</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:opacity-35 hover:!opacity-100 text-orange-500 text-center sm:text-left">Audio & Video</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:opacity-35 hover:!opacity-100 text-orange-500 text-center sm:text-left">Corporate Presentations</SpecialHoverButton>
-                <SpecialHoverButton className=" !bg-transparent px-7 py-3 group-hover:opacity-35 hover:!opacity-100 text-orange-500 text-center sm:text-left">E-Publishing</SpecialHoverButton>
+                <Expertise>E-learning</Expertise>
+                <Expertise>Illustration</Expertise>
+                <Expertise>Animations</Expertise>
+                <Expertise>Translation</Expertise>
+                <Expertise>Audio & Video</Expertise>
+                <Expertise>Corporate Presentations</Expertise>
+                <Expertise>E-Publishing</Expertise>
             </div>
 
         </div>
