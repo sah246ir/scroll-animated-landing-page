@@ -44,7 +44,7 @@ const ApprochSection = () => {
         })}
       </div>
 
-      <article className=' sm:w-[30em] mt-12 text-xl lg:text-4xl flex flex-col gap-8 items-start'>
+      <article style={{fontSize:"1.7vw"}} className=' sm:w-[30em] mt-12  flex flex-col gap-8 items-start'>
         <p>Over the past 20 years, Wokine has built hundreds of digital interfaces. Through these experiments, our team developed a method to build your project, and understand all the challenges and opportunities of your digital ecosystem.</p>
         <p>We turn your concepts into reality through carefully team-led steps. We work in the digital sector, but it is the human being who is at the heart of our approach. More than a site, we offer you personalised digital support.</p>
         <p>So before we take action,&nbsp;
@@ -52,7 +52,7 @@ const ApprochSection = () => {
         <Button> let's get to know each other.
         </Button>
         </p>
-        <Button className='text-xs'>Our approach
+        <Button className='text-xl'>Our approach
         </Button>
       </article>
     </section>
