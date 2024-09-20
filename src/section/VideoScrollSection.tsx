@@ -46,20 +46,25 @@ const VideoScrollSection = () => {
   const height = useTransform(
     scrollYProgress,
     [0, 0.5, 1],
-    [Dimensions.height - 1200, 500, minHeight],
+    [window.screen.height-315, window.screen.height/2, minHeight],
   );
 
   useMotionValueEvent(width, "change", (latest) => {
     setCurrentwidth(latest)
   })
+  
+
+  useEffect(()=>{
+    console.log(Dimensions)
+  },[Dimensions])
  
   return (
     <>
       <section className=" bg-white p-5 pb-24">
         <div ref={containerref} className="relative min-h-[2000px] h-[2000px] flex items-end">
           <div className=" absolute bottom-0 right-0 min-h-[2000px] h-[2000px] flex items-end" >
-            <motion.div style={{ width, height, transition: "200ms" }} className="sticky bottom-10 right-0">
-              <video loop className={`transition duration-200 w-full h-full ${currentwidth === 255 ? "hover:scale-105" : ""} rounded-2xl  object-cover`} autoPlay src={vid}></video>
+            <motion.div style={{ width, height:height, transition: "400ms" }} className="sticky bottom-10 right-0  ">
+              <video loop className={`transition-all duration-1000 w-full h-full ${currentwidth === 255 ? "hover:scale-105" : ""} rounded-2xl  object-cover`} autoPlay src={vid}></video>
             </motion.div>
           </div>
           <div className="max-w-[54vw]">

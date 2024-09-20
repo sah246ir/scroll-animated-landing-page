@@ -63,7 +63,7 @@ const GallerySection = () => {
             <div   ref={element} className="gallery flex flex-col sm:flex-row sm:gap-5">
                 {gallery.map((grp,i)=>{
                     return(
-                        <motion.div style={{...(i!==1 && {y})}} className="flex flex-col gap-8">
+                        <motion.div style={{...(i!==1 && {y})}} className="flex flex-col gap-8 transition-all duration-500 lg:transition-none">
                             {grp.map((potrait,j)=>{
                                 return(
                                     <GalleryPotrait overlay={hovered && hovered.toString()!==[i,j].toString()} onHover={()=>setHover([i,j])} onLeave={()=>setHover(null)} potrait={potrait} />

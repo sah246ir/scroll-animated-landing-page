@@ -51,8 +51,7 @@ interface WordProps {
 const Word = ({ word, range, scrollYProgress }: WordProps) => {
     const chars = word.split("")
     const amount = range[1] - range[0]
-    const step = amount / word.length
-    console.log(step, amount, range)
+    const step = amount / word.length 
     return (
         <span className='inline-block'>
             {chars.map((char, i) => {
@@ -73,7 +72,6 @@ interface CharProps {
     scrollYProgress: MotionValue<number>
 }
 const Char = ({ char, range, scrollYProgress }: CharProps) => {
-    console.log(range)
     const opacity = useTransform(scrollYProgress, range, [0, 1])
     return (
         <span className='relative'>
