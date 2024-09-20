@@ -12,8 +12,8 @@ const ApproachHeading = ({children,range,scrollYProgress}:PropTypes) => {
     const x = useTransform(scrollYProgress,range,[-30,0], )
     return (
         <div className='relative'>
-            <motion.div style={{x,fontSize:"5.787037037vw"}} className="-z-10 transition-all duration-500  absolute text-5xl text-gray-100">{children}<ArrowRight size={55} className='inline' /></motion.div>
-            <motion.h1 style={{opacity,x,fontSize:"5.787037037vw"}} className='transition-all duration-500  text-5xl text-black-200 '>
+            <motion.div style={{x,fontSize:"4.787037037vw"}} className="-z-10 transition-all duration-500  absolute text-5xl text-gray-100">{children}<ArrowRight size={55} className='inline' /></motion.div>
+            <motion.h1 style={{opacity,x,fontSize:"4.787037037vw"}} className='transition-all duration-500  text-5xl text-black-200 text-justify '>
                  {children}
                 <ArrowRight size={55} className='inline' />
             </motion.h1>
