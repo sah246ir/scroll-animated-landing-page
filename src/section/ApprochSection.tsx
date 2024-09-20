@@ -26,7 +26,7 @@ const ApprochSection = () => {
   const element = useRef<HTMLDivElement>(null)
   const {scrollYProgress} = useScroll({
     target:element,
-    offset: ['start .9', 'start .25']
+    offset: ['start .5', 'start start']
   })
   return (
     <section style={{marginInline:"auto"}} className='max-w-[85vw] p-5 py-12 flex flex-col items-end'>
@@ -44,7 +44,7 @@ const ApprochSection = () => {
         })}
       </div>
 
-      <article className=' sm:w-[30em] mt-12 text-lg flex flex-col gap-8 items-start'>
+      <article className=' sm:w-[30em] mt-12 text-xl lg:text-4xl flex flex-col gap-8 items-start'>
         <p>Over the past 20 years, Wokine has built hundreds of digital interfaces. Through these experiments, our team developed a method to build your project, and understand all the challenges and opportunities of your digital ecosystem.</p>
         <p>We turn your concepts into reality through carefully team-led steps. We work in the digital sector, but it is the human being who is at the heart of our approach. More than a site, we offer you personalised digital support.</p>
         <p>So before we take action,&nbsp;
