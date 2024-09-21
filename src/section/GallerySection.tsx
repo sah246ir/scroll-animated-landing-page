@@ -60,7 +60,7 @@ const GallerySection = () => {
                 <GalleryFilter>Category</GalleryFilter>
                 <GalleryFilter>Category</GalleryFilter>
             </div>
-            <div   ref={element} className="gallery flex flex-col sm:flex-row sm:gap-5">
+            <div   ref={element} className="gallery flex flex-col sm:flex-row sm:gap-5 min-h-[962px]">
                 {gallery.map((grp,i)=>{
                     return(
                         <motion.div style={{...(i!==1 && {y})}} className="flex flex-col gap-8 transition-all duration-500 lg:transition-none">

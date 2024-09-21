@@ -13,13 +13,12 @@ const InsideSection = () => {
     const rotateleft = useTransform(
         scrollYProgress,
         [0,.5,1],
-        [-5,-1.5,0],
-        
+        [-5,-2.5,0], 
     )
     const rotateright = useTransform(
         scrollYProgress,
         [0,.5,1],
-        [5,1.5,0], 
+        [5,2.5,0], 
     )
     const scaleleft = useTransform(
         scrollYProgress,
@@ -39,7 +38,7 @@ const InsideSection = () => {
     const x = useTransform(scrollYProgress, [0, 1], [-200, 0]);
     const revx = useTransform(scrollYProgress, [0, 1], [0, -200]);
     return (
-        <section className='overflow-hidden relative'>
+        <section className='overflow-hidden min-h-[170vh] sticky top-0   '>
 
             <motion.div style={{x:x,rotate:"-4deg"}} className="absolute  text-gray-300  flex gap-8 -top-10 transition duration-150 pointer-events-none">
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
@@ -68,16 +67,16 @@ const InsideSection = () => {
             <motion.div  
             style={{y}}
             ref={element} 
-            className='flex gap-14 h-screen p-5 py-12 flex-col md:flex-row' 
+            className='flex gap-14 h-screen p-5 py-12 flex-col md:flex-row transition-all duration-75   ' 
             >
                 <motion.article
-                className="h-full flex-grow bg-gray-400 transition duration-100 z-20 relative"
+                className="h-full flex-grow bg-gray-400 transition-all duration-75 z-20 sticky top-0"
                 style={{rotate:rotateleft,scale:scaleleft}}
                 >
                     <img src={banner1} className='absolute w-full h-full object-cover' alt="" />
                 </motion.article>  
                 <motion.article
-                className="h-full flex-grow bg-gray-400 transition duration-100 z-20 relative"
+                className="h-full flex-grow bg-gray-400 transition-all duration-75  z-20 sticky top-0"
                 style={{rotate:rotateright,scale:scaleright}}
                 >
                     <img src={banner2} className='absolute w-full h-full object-cover' alt="" />
