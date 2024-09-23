@@ -5,7 +5,7 @@ import Expertise from '../components/Expertise'
 
 const ExpertiseSection = () => {
     return (
-        <div className='py-20 px-5 flex flex-col sm:flex-row items-center sm:items-start gap-5 justify-around'>
+        <div className='py-20  bg-slate-100 px-10 flex flex-col sm:flex-row items-center sm:items-start gap-28 justify-around'>
             <div className='sm:sticky top-20'>
                 <div className="sticky top-10 max-w-[180px] flex flex-col gap-3">
                     <SectionHeading className=''>
