@@ -38,7 +38,7 @@ const InsideSection = () => {
     const x = useTransform(scrollYProgress, [0, 1], [-200, 0]);
     const revx = useTransform(scrollYProgress, [0, 1], [0, -200]);
     return (
-        <section className='overflow-hidden min-h-[170vh] sticky top-0   '>
+        <section className='overflow-hidden min-h-[145vh] sticky top-0   '>
 
             <motion.div style={{x:x,rotate:"-4deg"}} className="absolute  text-gray-300  flex gap-8 -top-10 transition duration-150 pointer-events-none">
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>

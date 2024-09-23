@@ -5,19 +5,19 @@ import Expertise from '../components/Expertise'
 
 const ExpertiseSection = () => {
     return (
-        <div style={{ backgroundColor: "#181717" }} className='py-20 px-5 flex flex-col sm:flex-row items-center sm:items-start gap-5 justify-around'>
+        <div className='py-20 px-5 flex flex-col sm:flex-row items-center sm:items-start gap-5 justify-around'>
             <div className='sm:sticky top-20'>
                 <div className="sticky top-10 max-w-[180px] flex flex-col gap-3">
-                    <SectionHeading bulletClassName='bg-orange-400' className='text-orange-400'>
+                    <SectionHeading className=''>
                          Our Expertise 
                     </SectionHeading>
-                    <p className='text-orange-400'>Des compétences au service de votre performance</p>
-                    <div className='mt-4 font-light text-sm text-orange-400'>
+                    <p className=''>Des compétences au service de votre performance</p>
+                    <div className='mt-4 font-light text-sm '>
                         <Button>Toutes nos expertises</Button>
                     </div>
                 </div>
             </div>
-            <div className="text-6xl tracking-wider group flex flex-col gap-7 sm:gap-0 ">
+            <div className="text-6xl tracking-wider group flex flex-col ">
                 <Expertise>E-learning</Expertise>
                 <Expertise>Illustration</Expertise>
                 <Expertise>Animations</Expertise>
