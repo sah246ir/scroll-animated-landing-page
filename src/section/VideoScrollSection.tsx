@@ -46,7 +46,7 @@ const VideoScrollSection = () => {
   const height = useTransform(
     scrollYProgress,
     [0, 0.5, 1],
-    [window.screen.height-315, window.screen.height/2, minHeight],
+    [window.screen.height-225, window.screen.height/2, minHeight],
   );
 
   useMotionValueEvent(width, "change", (latest) => {
