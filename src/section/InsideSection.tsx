@@ -38,7 +38,7 @@ const InsideSection = () => {
     const x = useTransform(scrollYProgress, [0, 1], [-200, 0]);
     const revx = useTransform(scrollYProgress, [0, 1], [0, -200]);
     return (
-        <section className='overflow-hidden min-h-[145vh] sticky top-0   '>
+        <section className='overflow-hidden min-h-[150vh] sticky top-0 z-0    '>
 
             <motion.div style={{x:x,rotate:"-4deg"}} className="absolute  text-gray-300  flex gap-8 -top-10 transition duration-150 pointer-events-none">
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
@@ -70,13 +70,13 @@ const InsideSection = () => {
             className='flex gap-14 h-screen p-5 py-12 flex-col md:flex-row transition-all duration-75   ' 
             >
                 <motion.article
-                className="h-full flex-grow bg-gray-400 transition-all duration-75 z-20 sticky top-0"
+                className="h-full flex-grow bg-gray-400 transition-all duration-75  sticky"
                 style={{rotate:rotateleft,scale:scaleleft}}
                 >
                     <img src={banner1} className='absolute w-full h-full object-cover' alt="" />
                 </motion.article>  
                 <motion.article
-                className="h-full flex-grow bg-gray-400 transition-all duration-75  z-20 sticky top-0"
+                className="h-full flex-grow bg-gray-400 transition-all duration-75   sticky"
                 style={{rotate:rotateright,scale:scaleright}}
                 >
                     <img src={banner2} className='absolute w-full h-full object-cover' alt="" />

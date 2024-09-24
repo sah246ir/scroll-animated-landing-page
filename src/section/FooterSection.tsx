@@ -6,7 +6,7 @@ const vid = require("../../src/media/vid.mp4");
 const logo = require("../media/logo-2.png")
 const FooterSection = () => {
   return (
-    <section style={{backgroundColor:"#181717"}} className='p-9 py-12 flex justify-between min-h-[450px] text-white gap-16 flex-col sm:flex-row items-center sm:items-stretch text-center sm:text-left'>
+    <section style={{backgroundColor:"#181717",zIndex:999}} className='p-9 py-12 flex justify-between min-h-[450px] text-white gap-16 flex-col sm:flex-row items-center sm:items-stretch text-center sm:text-left relative'>
       <div className='flex min-h-full gap-6 flex-col justify-between items-center sm:items-start max-w-[410px]'>
         <div className=''>
           <img width={162} src={logo} className='rounded-md' alt="" />
