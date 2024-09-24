@@ -15,8 +15,7 @@ const Navbar = () => {
 
 
             <div className="flex gap-4 text-xs mt-4">
-                <button className='px-2 py-1 border rounded-full border-black  '>
-
+                <button className='px-2 py-1 border rounded-full border-black  '> 
                     some text&nbsp;
                     <i className='inline'>
                         <ArrowRight className='inline' size={15} />

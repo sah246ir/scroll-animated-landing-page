@@ -9,6 +9,7 @@ import InsideSection from './section/InsideSection';
 import ApprochSection from './section/ApprochSection';
 import FooterSection from './section/FooterSection';
 import GallerySection from './section/GallerySection';
+import LandingSection from './section/LandingSection';
 
 
 
@@ -17,6 +18,7 @@ function App() {
     <>
       <Navbar />
       <HoverProvider>
+        <LandingSection />
         <VideoScrollSection />
         <ExpertiseSection />
         <ApprochSection />
