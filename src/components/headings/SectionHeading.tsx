@@ -10,7 +10,7 @@ const SectionHeading = ({children,className,bulletClassName,bullet=true}:PropTyp
     return (
         <div className={'flex items-center gap-3 ' + className}>
             {bullet && <div className={'bg-black size-2 rounded-full  ' + bulletClassName} />}
-            <p className={'text-sm w-full '}>{children}</p>
+            <p className={'text-sm '}>{children}</p>
         </div>
     )
 }

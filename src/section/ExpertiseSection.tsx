@@ -5,8 +5,8 @@ import Expertise from '../components/Expertise'
 
 const ExpertiseSection = () => {
     return (
-        <div className='py-20  bg-slate-100 px-10 flex flex-col sm:flex-row items-center sm:items-start gap-28 justify-around'>
-            <div className='sm:sticky top-20'>
+        <div className='py-20  bg-slate-100 px-10 flex flex-col md:flex-row items-center md:items-start gap-28 justify-around'>
+            <div className='md:sticky top-20'>
                 <div className="sticky top-10 max-w-[180px] flex flex-col gap-3">
                     <SectionHeading className=''>
                          Our Expertise 
@@ -17,7 +17,7 @@ const ExpertiseSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-6xl tracking-wider group flex flex-col ">
+            <div className="text-3xl sm:text-6xl tracking-wider group flex items-center md:items-start flex-col ">
                 <Expertise>E-learning</Expertise>
                 <Expertise>Illustration</Expertise>
                 <Expertise>Animations</Expertise>
