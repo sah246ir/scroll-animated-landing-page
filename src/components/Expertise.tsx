@@ -6,9 +6,9 @@ interface PropTypes{
 }
 const Expertise = ({children}:PropTypes) => {
   return (
-    <SpecialHoverButton className=" !bg-transparent px-7 py-2 group-hover:opacity-35 hover:!opacity-100 text-center sm:text-left flex justify-between items-center gap-3 group/btn">
+    <SpecialHoverButton className=" !bg-transparent px-7 py-2 group-hover:opacity-35 hover:!opacity-100 text-center md:text-left gap-3 group/btn">
        {children}
-      <img src={gif} className='group-hover/btn:opacity-100 opacity-0 transition duration-500' width={65} alt=""  />
+      {/* <img src={gif} className='group-hover/btn:opacity-100 opacity-0 transition duration-500 hidden sm:block' width={65} alt=""  /> */}
    </SpecialHoverButton>
 
   )

@@ -33,7 +33,7 @@ const LandingSection = () => {
                     }}
                     initial={"hidden"}
                     animate={"visible"}
-                    className='overflow-hidden whitespace-nowrap text-left text-6xl py-2 bg-orange-400 text-white font-extralight rounded-lg'
+                    className='overflow-hidden whitespace-nowrap text-left text-4xl sm:text-6xl py-2 bg-orange-400 text-white font-extralight rounded-lg'
                     transition={{
                         type: "spring",
                         stiffness: 75,
