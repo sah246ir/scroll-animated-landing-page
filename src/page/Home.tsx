@@ -8,23 +8,25 @@ import InsideSection from '../components/homePage/section/InsideSection'
 import FooterSection from '../components/homePage/section/FooterSection'
 import { HoverProvider } from '../ContextProviders/HoverWrapperProvider'
 import { motion } from 'framer-motion'
+import Navbar from '../components/Navbar'
 
 const Home = () => {
-    return ( 
-            <motion.main 
-                variants={{
-                    initial:{opacity:1},
-                    exit:{opacity:0}
-                }}
-                className='bg-white'
-                initial="initial"
-                exit={"exit"}
-                transition={{
-                    duration:"1"
-                }}
-            >
+    return (
+        <motion.main
+            variants={{
+                initial: { opacity: 1 },
+                exit: { opacity: 0 }
+            }}
+            className='bg-white'
+            initial="initial"
+            exit={"exit"}
+            transition={{
+                duration: "1"
+            }}
+        >
 
             <HoverProvider>
+                <Navbar />
                 <LandingSection />
                 <VideoScrollSection />
                 <ExpertiseSection />
@@ -33,7 +35,7 @@ const Home = () => {
                 <InsideSection />
                 <FooterSection />
             </HoverProvider>
-            </motion.main>
+        </motion.main>
     )
 }
 
