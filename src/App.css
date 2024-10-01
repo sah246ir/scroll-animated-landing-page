@@ -1,7 +1,9 @@
 *{
     box-sizing: border-box;
 } 
-
+body{
+    background-color: black;
+}
 .close-in-underline {
     position: relative;
     display: inline-block;
