@@ -2,6 +2,7 @@ import React from 'react'
 import SectionHeading from '../../headings/SectionHeading'
 import Button from '../../buttons/Button'
 import Expertise from '../../Expertise'
+import { Link } from 'react-router-dom'
  
 const ExpertiseSection = () => {
     return (
@@ -12,9 +13,9 @@ const ExpertiseSection = () => {
                          Our Expertise 
                     </SectionHeading>
                     <p className=''>Des compétences au service de votre performance</p>
-                    <div className='mt-4 font-light text-sm '>
-                        <Button>Toutes nos expertises</Button>
-                    </div>
+                    <Link to={"/services"} className='mt-4 font-light text-sm '>
+                        <Button>View all services</Button>
+                    </Link>
                 </div>
             </div>
             <div className="text-3xl sm:text-6xl tracking-wider group flex items-center md:items-start flex-col ">

@@ -1,0 +1,30 @@
+import { motion } from 'framer-motion'
+import { X } from 'lucide-react'
+import React from 'react'
+
+interface PropTypes{
+    children:React.ReactNode
+}
+const ComeUpPageWrapper = ({children}:PropTypes) => {
+  return (
+    <main className='p-10 h-screen overflow-hidden'>
+      <motion.section 
+      initial={{y:1660}}
+      animate={{y:0}}
+      exit={{y:1660,opacity:0}}
+      className='min-h-full bg-white rounded-3xl relative' 
+      transition={{
+        ease:"easeInOut",
+        duration:'2'
+      }}
+      >
+        <button className='absolute right-3 top-3 bg-black w-12 h-12 rounded-full grid place-items-center'>
+            <X stroke='white'/>
+        </button>
+        {children}
+      </motion.section>
+    </main>
+  )
+}
+
+export default ComeUpPageWrapper
