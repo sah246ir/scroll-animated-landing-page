@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { ArrowRight  } from 'lucide-react'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const logo = require("../../../media/clekk-logo.png")
 const LandingSection = () => {
@@ -59,15 +60,17 @@ const LandingSection = () => {
                         delay: 4
                     }}
                 >
-                    <button className='whitespace-nowrap transition-all duration-500 w-[9.65rem] -translate-x-9 hover:-translate-x-2'>
-                        <i className='inline'>
-                            <ArrowRight className='inline' size={25} />
-                        </i>
-                        &nbsp;Let's Work Together&nbsp;
-                        <i className='inline'>
-                            <ArrowRight className='inline' size={25} />
-                        </i>
-                    </button>
+                    <Link to={"/contact-us"}>
+                        <button className='whitespace-nowrap transition-all duration-500 w-[9.65rem] -translate-x-9 hover:-translate-x-2'>
+                            <i className='inline'>
+                                <ArrowRight className='inline' size={25} />
+                            </i>
+                            &nbsp;Let's Work Together&nbsp;
+                            <i className='inline'>
+                                <ArrowRight className='inline' size={25} />
+                            </i>
+                        </button>
+                    </Link>
                 </motion.button>
             </article>
 
