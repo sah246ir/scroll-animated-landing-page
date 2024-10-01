@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useMotionValueEvent, useScroll,  useTransform } from 'framer-motion';
-import SmartParagraph from '../components/smartParagraph';
+import SmartParagraph from '../../smartParagraph';
 
-const vid = require("../../src/media/vid.mp4");
+const vid = require("../../../media/vid.mp4");
 
 
 const VideoScrollSection = () => {

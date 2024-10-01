@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react'
-import GalleryPotrait from '../components/GalleryPotrait';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Star } from 'lucide-react';
-import GalleryFilter from '../components/GalleryFilter';
+import GalleryFilter from '../../GalleryFilter';
+import GalleryPotrait from '../../GalleryPotrait';
 
 interface Potrait{
     img:any,
@@ -12,20 +12,20 @@ interface Potrait{
 }
 const gallery:Potrait[][] = [
     [
-        { img: require("../media/img-1.jpg"),name:"Kook",tags:["tag","tag"],size:"md" },
-        { img: require("../media/img-2.jpg"),name:"Kook",tags:["tag","tag"],size:"md" },
-        { img: require("../media/img-3.jpg"),name:"Kook",tags:["tag","tag"],size:"sm" },
-        { img: require("../media/img-4.jpg"),name:"Kook",tags:["tag","tag"],size:"md" }
+        { img: require("../../../media/img-1.jpg"),name:"Kook",tags:["tag","tag"],size:"md" },
+        { img: require("../../../media/img-2.jpg"),name:"Kook",tags:["tag","tag"],size:"md" },
+        { img: require("../../../media/img-3.jpg"),name:"Kook",tags:["tag","tag"],size:"sm" },
+        { img: require("../../../media/img-4.jpg"),name:"Kook",tags:["tag","tag"],size:"md" }
     ],
     [
-        { img: require("../media/img-5.jpg"),name:"Kook",tags:["tag","tag"],size:"md" },
-        { img: require("../media/img-6.jpg"),name:"Kook",tags:["tag","tag"],size:"sm" },
-        { img: require("../media/img-7.jpg"),name:"Kook",tags:["tag","tag"],size:"md" }
+        { img: require("../../../media/img-5.jpg"),name:"Kook",tags:["tag","tag"],size:"md" },
+        { img: require("../../../media/img-6.jpg"),name:"Kook",tags:["tag","tag"],size:"sm" },
+        { img: require("../../../media/img-7.jpg"),name:"Kook",tags:["tag","tag"],size:"md" }
     ],
     [
-        { img: require("../media/img-8.jpg"),name:"Kook",tags:["tag","tag"],size:"sm" },
-        { img: require("../media/img-9.jpg"),name:"Kook",tags:["tag","tag"],size:"lg" },
-        { img: require("../media/img-10.jpg"),name:"Kook",tags:["tag","tag"],size:"sm" }
+        { img: require("../../../media/img-8.jpg"),name:"Kook",tags:["tag","tag"],size:"sm" },
+        { img: require("../../../media/img-9.jpg"),name:"Kook",tags:["tag","tag"],size:"lg" },
+        { img: require("../../../media/img-10.jpg"),name:"Kook",tags:["tag","tag"],size:"sm" }
     ]
 ];
 const GallerySection = () => {

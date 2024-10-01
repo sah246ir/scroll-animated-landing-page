@@ -1,8 +1,8 @@
 import React from 'react'
-import Button from '../components/buttons/Button'
-import SectionHeading from '../components/headings/SectionHeading'
-import Expertise from '../components/Expertise'
-
+import SectionHeading from '../../headings/SectionHeading'
+import Button from '../../buttons/Button'
+import Expertise from '../../Expertise'
+ 
 const ExpertiseSection = () => {
     return (
         <div className='py-20  bg-slate-100 px-10 flex flex-col md:flex-row items-center md:items-start gap-28 justify-around'>

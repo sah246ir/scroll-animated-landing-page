@@ -1,9 +1,9 @@
 import React from 'react'
-import Button from '../components/buttons/Button';
-import SectionHeading from '../components/headings/SectionHeading';
+import SectionHeading from '../../headings/SectionHeading';
+import Button from '../../buttons/Button';
 
-const vid = require("../../src/media/vid.mp4");
-const logo = require("../media/logo-2.png")
+const vid = require("../../../media/vid.mp4");
+const logo = require("../../../media/logo-2.png")
 const FooterSection = () => {
   return (
     <section style={{backgroundColor:"#181717",zIndex:999}} className='p-9 py-12 flex justify-between min-h-[450px] text-white gap-16 flex-col sm:flex-row items-center sm:items-stretch text-center sm:text-left relative'>

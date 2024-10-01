@@ -1,7 +1,7 @@
 import React from 'react'
-import SectionHeading from '../components/headings/SectionHeading'
-import SmartParagraph from '../components/smartParagraph'
-import Button from '../components/buttons/Button'
+import SmartParagraph from '../../smartParagraph'
+import SectionHeading from '../../headings/SectionHeading'
+import Button from '../../buttons/Button'
 
 const RecognitionSection = () => {
   return (

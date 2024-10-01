@@ -1,8 +1,9 @@
-import React, { useRef } from 'react'
-import SectionHeading from '../components/headings/SectionHeading'
-import ApproachHeading from '../components/headings/ApproachHeading'
 import { useScroll } from 'framer-motion'
-import Button from '../components/buttons/Button'
+import React, { useRef } from 'react'
+import SectionHeading from '../../headings/SectionHeading'
+import ApproachHeading from '../../headings/ApproachHeading'
+import Button from '../../buttons/Button'
+ 
 
 const ApprochSection = () => {
   const headings  = [

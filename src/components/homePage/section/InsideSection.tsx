@@ -2,8 +2,8 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { Star } from 'lucide-react'
 import React, { useRef } from 'react'
 
-const banner1 = require("../media/vertical-banner.jpg")
-const banner2 = require("../media/vertical-banner-1.jpg")
+const banner1 = require("../../../media/vertical-banner.jpg")
+const banner2 = require("../../../media/vertical-banner-1.jpg")
 const InsideSection = () => {
     const element = useRef<HTMLDivElement>(null)
     const { scrollYProgress } = useScroll({

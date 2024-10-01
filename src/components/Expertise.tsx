@@ -1,6 +1,5 @@
 import React from 'react'
 import SpecialHoverButton from './buttons/SpecialHoverButton'
-const gif = require("../media/giffy.gif")
 interface PropTypes{
   children:React.ReactNode
 }
