@@ -3,6 +3,7 @@ import React, { useRef } from 'react'
 import SectionHeading from '../../headings/SectionHeading'
 import ApproachHeading from '../../headings/ApproachHeading'
 import Button from '../../buttons/Button'
+import { Link } from 'react-router-dom'
  
 
 const ApprochSection = () => {
@@ -50,8 +51,10 @@ const ApprochSection = () => {
         <p>We turn your concepts into reality through carefully team-led steps. We work in the digital sector, but it is the human being who is at the heart of our approach. More than a site, we offer you personalised digital support.</p>
         <p>So before we take action,&nbsp;
 
-        <Button> let's get to know each other.
-        </Button>
+        <Link to={"/contact-us"}>
+          <Button> let's get to know each other.
+          </Button>
+        </Link>
         </p>
         <Button className='text-xl'>Our approach
         </Button>
