@@ -9,15 +9,18 @@ interface PropTypes{
 const ComeUpPageWrapper = ({children}:PropTypes) => {
   const navigate = useNavigate();
   return (
-    <main className='p-10 h-screen overflow-hidden'>
+    <main className='p-10 min-h-screen overflow- '>
       <motion.section 
       initial={{y:1660}}
       animate={{y:0}}
       exit={{y:1660,opacity:0}}
-      className='min-h-full bg-white rounded-3xl relative' 
+      className='min-h-full bg-white rounded-3xl px-5 py-20 relative' 
       transition={{
         ease:"easeInOut",
-        duration:'2'
+        duration:'2',
+        type:"spring",
+        stiffness:35,
+        damping:13
       }}
       >
         <button onClick={()=>navigate(-1)} className='absolute right-3 top-3 bg-black w-12 h-12 rounded-full grid place-items-center'>
