@@ -7,12 +7,12 @@ import ApprochSection from '../components/homePage/section/ApprochSection'
 import InsideSection from '../components/homePage/section/InsideSection'
 import FooterSection from '../components/homePage/section/FooterSection'
 import { HoverProvider } from '../ContextProviders/HoverWrapperProvider'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import Navbar from '../components/Navbar'
 
 const Home = () => {
     return (
-        <motion.main
+        <m.main
             variants={{
                 initial: { opacity: 1 },
                 exit: { opacity: 0 }
@@ -35,7 +35,7 @@ const Home = () => {
                 <InsideSection />
                 <FooterSection />
             </HoverProvider>
-        </motion.main>
+        </m.main>
     )
 }
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { motion, useMotionValueEvent, useScroll,  useTransform } from 'framer-motion';
+import { m, useMotionValueEvent, useScroll,  useTransform } from 'framer-motion';
 import SmartParagraph from '../../smartParagraph';
 
 const vid = require("../../../media/vid.mp4");
@@ -60,9 +60,9 @@ const VideoScrollSection = () => {
       <section className=" bg-white p-5 pb-24">
         <div ref={containerref} className="relative min-h-[2000px] h-[2000px] flex items-end">
           <div className=" absolute bottom-0 right-0 min-h-[2000px] h-[2000px] flex items-end" >
-            <motion.div style={{ width, height:height, transition: "400ms" }} className="sticky bottom-10 right-0 z-40  ">
+            <m.div style={{ width, height:height, transition: "400ms" }} className="sticky bottom-10 right-0 z-40  ">
               <video loop className={` w-full h-full ${currentwidth === 255 ? "hover:scale-105" : ""} rounded-2xl  object-cover`} autoPlay src={vid}></video>
-            </motion.div>
+            </m.div>
           </div>
           <div className="max-w-[54vw]">
 

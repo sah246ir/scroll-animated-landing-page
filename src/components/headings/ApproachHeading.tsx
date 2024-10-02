@@ -1,4 +1,4 @@
-import { motion, MotionValue, useTransform } from 'framer-motion'
+import { m, MotionValue, useTransform } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import React from 'react'
 
@@ -12,13 +12,13 @@ const ApproachHeading = ({children,range,scrollYProgress}:PropTypes) => {
     const x = useTransform(scrollYProgress,range,[-30,0], )
     return (
         <div className='relative'>
-            <motion.div style={{x,fontSize:"3.787037037vw"}} className="-z-10 transition-all duration-500  absolute text-5xl text-gray-100">{children}
+            <m.div style={{x,fontSize:"3.787037037vw"}} className="-z-10 transition-all duration-500  absolute text-5xl text-gray-100">{children}
                 <ArrowRight className='inline  sm:size-12' />
-            </motion.div>
-            <motion.h1 style={{opacity,x,fontSize:"3.787037037vw"}} className='transition-all duration-500  text-5xl text-black-200 text-justify '>
+            </m.div>
+            <m.h1 style={{opacity,x,fontSize:"3.787037037vw"}} className='transition-all duration-500  text-5xl text-black-200 text-justify '>
                  {children}
                 <ArrowRight className='inline sm:size-12 ' />
-            </motion.h1>
+            </m.h1>
         </div>
     )
 }

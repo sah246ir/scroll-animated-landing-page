@@ -1,4 +1,4 @@
-import { motion, MotionValue, useScroll, useTransform } from 'framer-motion'
+import { m, MotionValue, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 
 interface PropTypes{
@@ -12,7 +12,7 @@ const SmartParagraph = ({text}:PropTypes) => {
     })
 
     return (
-        <motion.p
+        <m.p
             ref={element}
             className="text-[3.5vw] text-black text-left max-w-[54vw]"
         >
@@ -20,7 +20,7 @@ const SmartParagraph = ({text}:PropTypes) => {
                text || `Wokine conçoit des solutions et expériences digitales qui allient créativité, technologie et engagement éthiquse.`}
             />
 
-        </motion.p>
+        </m.p>
     )
 }
 
@@ -76,7 +76,7 @@ const Char = ({ char, range, scrollYProgress }: CharProps) => {
     return (
         <span className='relative'>
             <span className='opacity-[0.3] absolute'>{char}</span>
-            <motion.span style={{ opacity }} className='transition duration-300'>{char}</motion.span>
+            <m.span style={{ opacity }} className='transition duration-300'>{char}</m.span>
         </span>
     )
 }
