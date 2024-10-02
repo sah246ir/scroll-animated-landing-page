@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { m, useScroll, useTransform } from 'framer-motion';
 import { Star } from 'lucide-react';
 import GalleryFilter from '../../GalleryFilter';
 import GalleryPotrait from '../../GalleryPotrait';
@@ -61,13 +61,13 @@ const GallerySection = () => {
             <div ref={element} className="gallery hidden sm:flex  flex-col sm:flex-row sm:gap-5 min-h-[962px]">
                 {gallery.map((grp,i)=>{
                     return(
-                        <motion.div style={{...(i!==1 && {y})}} className="flex flex-col gap-8 transition-all duration-500 lg:transition-none">
+                        <m.div style={{...(i!==1 && {y})}} className="flex flex-col gap-8 transition-all duration-500 lg:transition-none">
                             {grp.map((potrait,j)=>{
                                 return(
                                     <GalleryPotrait overlay={hovered && hovered.toString()!==[i,j].toString()} onHover={()=>setHover([i,j])} onLeave={()=>setHover(null)} potrait={potrait} />
                                 )
                             })}
-                        </motion.div> 
+                        </m.div> 
                     )
                 })} 
             </div>

@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { X } from 'lucide-react'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -10,7 +10,7 @@ const ComeUpPageWrapper = ({children}:PropTypes) => {
   const navigate = useNavigate();
   return (
     <main className='p-10 min-h-screen overflow- '>
-      <motion.section 
+      <m.section 
       initial={{y:1660}}
       animate={{y:0}}
       exit={{y:1660,opacity:0}}
@@ -27,7 +27,7 @@ const ComeUpPageWrapper = ({children}:PropTypes) => {
             <X stroke='white'/>
         </button>
         {children}
-      </motion.section>
+      </m.section>
     </main>
   )
 }

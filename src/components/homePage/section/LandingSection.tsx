@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { ArrowRight  } from 'lucide-react'
 import React from 'react'
 import { Link } from 'react-router-dom'
@@ -7,7 +7,7 @@ const logo = require("../../../media/clekk-logo.png")
 const LandingSection = () => {
     return (
         <div className='h-[95vh] bg-slate-100 grid place-items-center'>
-            <motion.i
+            <m.i
                 variants={{
                     visible: { y: -170 },
                     hidden: { y: 0 }
@@ -24,10 +24,10 @@ const LandingSection = () => {
             >
 
                 <img src={logo} width={345} className='opacity- ' alt='clekk logo' />
-            </motion.i>
+            </m.i>
             <article className=' '>
 
-                <motion.h1
+                <m.h1
                     variants={{
                         visible: { width: "100%" },
                         hidden: { width: "0em" }
@@ -43,9 +43,9 @@ const LandingSection = () => {
                     }}
                 >
                     &nbsp;Beyond The Frame&nbsp;
-                </motion.h1>
+                </m.h1>
 
-                <motion.button
+                <m.button
                     className='block overflow-hidden px-2 py-1 border rounded-full border-black m-auto mt-5 w-48  '
                     variants={{
                         visible: { opacity: 1, y: 0 },
@@ -71,7 +71,7 @@ const LandingSection = () => {
                             </i>
                         </button>
                     </Link>
-                </motion.button>
+                </m.button>
             </article>
 
         </div>

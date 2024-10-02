@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { m, useScroll, useTransform } from 'framer-motion'
 import { Star } from 'lucide-react'
 import React, { useRef } from 'react'
 
@@ -40,49 +40,49 @@ const InsideSection = () => {
     return (
         <section className='overflow-hidden min-h-[150vh] sticky top-0 z-0    '>
 
-            <motion.div style={{x:x,rotate:"-4deg"}} className="absolute  text-gray-300  flex gap-8 -top-10 transition duration-150 pointer-events-none">
+            <m.div style={{x:x,rotate:"-4deg"}} className="absolute  text-gray-300  flex gap-8 -top-10 transition duration-150 pointer-events-none">
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
-            </motion.div>
+            </m.div>
 
-            <motion.div style={{x:revx,rotate:"-4deg"}} className="absolute  text-gray-300  flex gap-8 top-28 transition duration-150 pointer-events-none">
+            <m.div style={{x:revx,rotate:"-4deg"}} className="absolute  text-gray-300  flex gap-8 top-28 transition duration-150 pointer-events-none">
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
-            </motion.div>
+            </m.div>
 
-            <motion.div style={{x:x,rotate:"-4deg"}} className="absolute  text-gray-300  flex gap-8 top-56 transition duration-150 pointer-events-none">
+            <m.div style={{x:x,rotate:"-4deg"}} className="absolute  text-gray-300  flex gap-8 top-56 transition duration-150 pointer-events-none">
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
                 <h1 className='text-[10ch] whitespace-nowrap'><Star size={35} className='inline fill-gray-300'/> Inside Clekk </h1>
-            </motion.div>
+            </m.div>
 
-            <motion.div  
+            <m.div  
             style={{y}}
             ref={element} 
             className='flex gap-14 h-screen p-5 py-12 flex-col md:flex-row transition-all duration-75   ' 
             >
-                <motion.article
+                <m.article
                 className="h-full flex-grow bg-gray-400 transition-all duration-75  sticky"
                 style={{rotate:rotateleft,scale:scaleleft}}
                 >
                     <img src={banner1} className='absolute w-full h-full object-cover' alt="" />
-                </motion.article>  
-                <motion.article
+                </m.article>  
+                <m.article
                 className="h-full flex-grow bg-gray-400 transition-all duration-75   sticky"
                 style={{rotate:rotateright,scale:scaleright}}
                 >
                     <img src={banner2} className='absolute w-full h-full object-cover' alt="" />
 
-                </motion.article>
-            </motion.div>
+                </m.article>
+            </m.div>
         </section>
     )
 } 

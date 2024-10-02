@@ -5,20 +5,20 @@ import Home from './page/Home';
 import { AnimatePresence } from 'framer-motion';
 import Services from './page/Services';
 import Contact from './page/Contact';
- 
+import { LazyMotion, domAnimation } from "framer-motion"
 function App() {
   const location = useLocation()
   return (
     <>
-      <AnimatePresence mode="wait">
-
-        <Routes key={location.pathname} location={location}>
-          <Route index element={<Home/>} />
-          <Route path='/services' element={<Services/>} />
-          <Route path='/contact-us' element={<Contact/>} />
-        </Routes>
-      </AnimatePresence>
-      
+      <LazyMotion strict features={domAnimation}>
+        <AnimatePresence mode="wait"> 
+          <Routes key={location.pathname} location={location}>
+            <Route index element={<Home />} />
+            <Route path='/services' element={<Services />} />
+            <Route path='/contact-us' element={<Contact />} />
+          </Routes>
+        </AnimatePresence>
+      </LazyMotion>
     </>
   );
 }
