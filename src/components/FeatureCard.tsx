@@ -9,7 +9,7 @@ const Feature = ({ title, description }: PropTypes) => {
     return (
         <div className="flex justify-around gap-4 w-full items-center  ">
             <div className="w-[25%]">
-                <img className='w-[65%]' src={gif} alt="" />
+                <img className='w-[55%]' src={gif} alt="" />
             </div>
             <div className='w-[75%]' >
                 <h1 className='text-[2.3vw]  text-gray-700 font-medium'>{title}</h1>
