@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { m, useMotionValueEvent, useScroll,  useTransform } from 'framer-motion';
 import SmartParagraph from '../../smartParagraph';
+import Button from '../../buttons/Button';
+import { Link } from 'react-router-dom';
 
 const vid = require("../../../media/vid.mp4");
 
@@ -67,7 +69,7 @@ const VideoScrollSection = () => {
           <div className="max-w-[54vw]">
 
               <SmartParagraph text={`In a world where the ordinary is often accepted as the norm, we dare to look beyond—to envision what lies outside the conventional boundaries of creativity and technology.`} />
-
+              <Link to={'/why-choose-us'}><Button className='mt-7'>Know Why We are The Best</Button></Link>
           </div>
         </div>
       </section>
