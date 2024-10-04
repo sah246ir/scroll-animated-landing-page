@@ -8,6 +8,7 @@ import Contact from './page/Contact';
 import { LazyMotion, domAnimation } from "framer-motion"
 import Process from './page/Process';
 import Team from './page/Team';
+import WhyChooseUs from './page/WhyChooseUs';
 function App() {
   const location = useLocation()
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path='/contact-us' element={<Contact />} />
             <Route path='/process' element={<Process />} />
             <Route path='/team' element={<Team />} />
+            <Route path='/why-choose-us' element={<WhyChooseUs />} />
           </Routes>
         </AnimatePresence>
       </LazyMotion>
