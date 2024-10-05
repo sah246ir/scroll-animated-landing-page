@@ -1,6 +1,7 @@
 import React from 'react'
 import SectionHeading from '../../headings/SectionHeading';
 import Button from '../../buttons/Button';
+import { Link } from 'react-router-dom';
 
 const vid = require("../../../media/vid.mp4");
 const logo = require("../../../media/logo-2.png")
@@ -22,10 +23,18 @@ const FooterSection = () => {
             <div>
               <SectionHeading className='mb-7' bullet={false}>READ MORE</SectionHeading>
               <ul className='transition duration-300 text-lg space-y-2  hover:text-gray-800'>
-                <li className='transition duration-300 hover:text-white cursor-pointer'>Our approach</li>
-                <li className='transition duration-300 hover:text-white cursor-pointer'>Our expertise</li>
-                <li className='transition duration-300 hover:text-white cursor-pointer'>CSR approach</li>
-                <li className='transition duration-300 hover:text-white cursor-pointer'>Apply</li>
+                <li className='transition duration-300 hover:text-white cursor-pointer'>
+                  <Link to={'/process'}>Our approach</Link>
+                </li>
+                <li className='transition duration-300 hover:text-white cursor-pointer'>
+                  <Link to={'/services'}>Our services</Link>
+                </li>
+                <li className='transition duration-300 hover:text-white cursor-pointer'>
+                  <Link to={'/why-choose-us'}>Why choose us</Link>
+                </li>
+                <li className='transition duration-300 hover:text-white cursor-pointer'>
+                  <Link to={'/contact'}>Contact us</Link>
+                </li>
               </ul>
             </div>
 
