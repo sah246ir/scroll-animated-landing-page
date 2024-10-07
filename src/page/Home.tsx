@@ -14,12 +14,14 @@ const Home = () => {
     return (
         <m.main
             variants={{
-                initial: { opacity: 1 },
+                initial: { opacity: 0 },
+                visible:{opacity:1},
                 exit: { opacity: 0 }
             }}
             className='bg-white'
             initial="initial"
             exit={"exit"}
+            animate={"visible"}
             transition={{
                 duration: "1"
             }}
