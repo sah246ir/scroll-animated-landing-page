@@ -2,6 +2,7 @@ import React from 'react'
 import SectionHeading from '../../headings/SectionHeading';
 import Button from '../../buttons/Button';
 import { Link } from 'react-router-dom';
+import { Instagram, Linkedin } from 'lucide-react';
 
 const vid = require("../../../media/vid.mp4");
 const logo = require("../../../media/logo-2.png")
@@ -59,12 +60,18 @@ const FooterSection = () => {
 
             <div>
               <SectionHeading className='mb-7' bullet={false}>MANAGE YOUR PROJECT</SectionHeading> 
-              <div className="flex gap-2 flex-wrap justify-between hover:text-gray-800">
-                <i className='transition duration-300 hover:text-white cursor-pointer'>ico</i>
-                <i className='transition duration-300  hover:text-white cursor-pointer'>ico</i>
-                <i className='transition duration-300 hover:text-white cursor-pointer'>ico</i>
-                <i className='transition duration-300 hover:text-white cursor-pointer'>ico</i>
-                <i className='transition duration-300 hover:text-white cursor-pointer'>ico</i>
+              <div className="flex gap-4 flex-wrap  hover:text-gray-800">
+                <Link target='_blank' to={"https://www.instagram.com/clekkflix"}>
+                  <i className='transition duration-300 hover:text-pink-600 cursor-pointer'>
+                    <Instagram size={34}/>
+                  </i>
+                </Link>
+                <Link target='_blank' to={"https://www.linkedin.com/in/clekk-flix-17304245/"}>
+                <i className='transition duration-300  hover:text-blue-600 cursor-pointer'>
+                  <Linkedin strokeWidth={1.12} size={34}/>
+                </i>
+                </Link>
+                
               </div>
             </div>
         </div>
