@@ -6,15 +6,15 @@ const map = require("../media/gmap.png")
 const Contact = () => {
   return (
     <ComeUpPageWrapper >
-      <div className="flex justify-between mb-14 gap-3">
+      <div className="flex flex-col sm:flex-row justify-between mb-14 gap-3">
         <h1 className='text-4xl font-medium'>Lets Work Together</h1>
-        <p className='w-[65%] text-3xl font-normal'>Our team of around 20 passionate experts designs personalised digital solutions. From advice to design to technical implementation, we make your entire digital journey.
+        <p className='sm:w-[65%] text-3xl font-normal'>Our team of around 20 passionate experts designs personalised digital solutions. From advice to design to technical implementation, we make your entire digital journey.
         </p>
       </div>
       <div className='flex flex-col items-'>
         <h2 className='text-4xl'>Contact us</h2>
 
-        <div className="flex gap-14 mt-6 justify-between">
+        <div className="flex flex-col sm:flex-row gap-14 mt-6 justify-between">
           <form action="#" className="space-y-4 max-w-[800px] flex-grow">
             <div>
               <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
@@ -33,7 +33,7 @@ const Contact = () => {
             </button>
           </form>
 
-          <div className="w-[40%] space-y-2">
+          <div className="sm:w-[40%] space-y-2">
             <div className="">
               <h2 className='font-medium text-gray-800'>Address:</h2>
               <p className='mb-2'>Eureka Towers C-802, Chincholi Bunder Rd, Mindspace, Malad West, Mumbai - 400064, Maharashtra, India.</p>

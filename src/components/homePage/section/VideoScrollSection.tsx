@@ -60,7 +60,7 @@ const VideoScrollSection = () => {
   return (
     <>
       <section className=" bg-white p-5 pb-24">
-        <div ref={containerref} className="relative min-h-[2000px] h-[2000px] flex items-end">
+        <div ref={containerref} className="relative min-h-[2000px] h-[2000px] hidden sm:flex items-end">
           <div className=" absolute bottom-0 right-0 min-h-[2000px] h-[2000px] flex items-end" >
             <m.div style={{ width, height:height, transition: "400ms" }} className="sticky bottom-10 right-0 z-40  ">
               <video loop className={` w-full h-full ${currentwidth === 255 ? "hover:scale-105" : ""} rounded-2xl  object-cover`} autoPlay src={vid}></video>
@@ -70,6 +70,16 @@ const VideoScrollSection = () => {
 
               <SmartParagraph text={`In a world where the ordinary is often accepted as the norm, we dare to look beyond—to envision what lies outside the conventional boundaries of creativity and technology.`} />
               <Link to={'/why-choose-us'}><Button className='mt-7'>Know Why We are The Best</Button></Link>
+          </div>
+        </div>
+
+        <div className="sm:hidden min-h-[500px] ">
+            <div >
+              <video loop className={` w-full h-[54vh] ${currentwidth === 255 ? "hover:scale-105" : ""} rounded-2xl  object-cover`} autoPlay src={vid}></video>
+            </div>
+          <div className="w-full mt-24 flex flex-col items-center"> 
+              <SmartParagraph text={`In a world where the ordinary is often accepted as the norm, we dare to look beyond—to envision what lies outside the conventional boundaries of creativity and technology.`} />
+              <Link to={'/why-choose-us'}><Button className='mt-7 text-2xl'>Know Why We are The Best</Button></Link>
           </div>
         </div>
       </section>
