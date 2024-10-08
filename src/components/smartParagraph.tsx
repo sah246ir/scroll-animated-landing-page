@@ -14,7 +14,7 @@ const SmartParagraph = ({text}:PropTypes) => {
     return (
         <m.p
             ref={element}
-            className="text-[3.5vw] text-black text-left max-w-[54vw]"
+            className="text-4xl sm:text-[3.5vw] text-black text-left leading-normal w-full sm:max-w-[54vw]"
         >
             <Sentence scrollYProgress={scrollYProgress} sentence={
                text || `Wokine conçoit des solutions et expériences digitales qui allient créativité, technologie et engagement éthiquse.`}
@@ -31,7 +31,7 @@ interface SentenceProps {
 const Sentence = ({ sentence, scrollYProgress }: SentenceProps) => {
     const words = sentence.split(" ")
     return (
-        <span className='max-w-[54vw] inline-block'>
+        <span className='w-full sm:max-w-[54vw] inline-block'>
             {words.map((word, i) => {
                 const start = i / words.length;
                 const end = start + (1 / words.length)

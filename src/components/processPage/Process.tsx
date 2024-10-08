@@ -15,7 +15,7 @@ const ProcessCard = ({ title, description, index, img }: PropTypes) => {
                 <h2 className='text-3xl'>{title}</h2>
             </div>
             <hr className='border-black mb-4 mt-1' />
-            <div className="flex justify-around gap-4  ">
+            <div className="flex items-center justify-around gap-4  ">
                 <img width={170} className=' object-cover' src={imgg} alt="" />
                 <p className='w-[65%] text-[2vw] font-normal' style={{ height: '100%' }}>
                     {description}

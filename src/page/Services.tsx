@@ -5,9 +5,9 @@ import Service from '../components/servicesPage/Service'
 const Services = () => {
   return (
     <ComeUpPageWrapper >
-      <div className="flex justify-around">
+      <div className="flex flex-col sm:flex-row justify-around">
         <h1 className='text-4xl font-medium'>Our Services</h1>
-        <p className='w-[65%] text-3xl font-normal'>Our team of around 20 passionate experts designs personalised digital solutions. From advice to design to technical implementation, we make your entire digital journey.
+        <p className='sm:w-[65%] text-3xl font-normal'>Our team of around 20 passionate experts designs personalised digital solutions. From advice to design to technical implementation, we make your entire digital journey.
         </p>
       </div>
 
