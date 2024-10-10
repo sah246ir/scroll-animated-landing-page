@@ -68,7 +68,7 @@ const VideoScrollSection = () => {
           </div>
           <div className="max-w-[54vw]">
 
-              <SmartParagraph text={`In a world where the ordinary is often accepted as the norm, we dare to look beyond—to envision what lies outside the conventional boundaries of creativity and technology.`} />
+              <SmartParagraph text={`In a world where creativity and technology are confined within ordinary thought, we dare to envision something beyond the boundaries of the mind and into the world of perfection.`} />
               <Link to={'/why-choose-us'}><Button className='mt-7'>Know Why We are The Best</Button></Link>
           </div>
         </div>
@@ -78,7 +78,7 @@ const VideoScrollSection = () => {
               <video loop className={` w-full h-[54vh] ${currentwidth === 255 ? "hover:scale-105" : ""} rounded-2xl  object-cover`} autoPlay src={vid}></video>
             </div>
           <div className="w-full mt-24 flex flex-col items-center"> 
-              <SmartParagraph text={`In a world where the ordinary is often accepted as the norm, we dare to look beyond—to envision what lies outside the conventional boundaries of creativity and technology.`} />
+              <SmartParagraph text={`In a world that settles for ordinary, we prefer to break the mould. We're the kind that asks, “Why not?” instead of “Why?”, because we believe perfection happens when you step outside the lines. Let’s dream a little bigger, explore a little further and turn every idea into something extraordinary.`} />
               <Link to={'/why-choose-us'}><Button className='mt-7 text-2xl'>Know Why We are The Best</Button></Link>
           </div>
         </div>
