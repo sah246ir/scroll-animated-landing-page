@@ -36,18 +36,13 @@ const FooterSection = () => {
                 <li className='transition duration-300 hover:text-white cursor-pointer'>
                   <Link to={'/contact-us'}>Contact us</Link>
                 </li>
+                <li className='transition duration-300 hover:text-white cursor-pointer'>
+                  <Link to={'/team'}>Meet our team</Link>
+                </li>
               </ul>
             </div>
 
-            <div>
-              <SectionHeading className='mb-7' bullet={false}>GO FURTHER</SectionHeading> 
-              <Button>blaa</Button>
-            </div>
-            
-            <div>
-              <SectionHeading className='mb-7' bullet={false}>MANAGE YOUR PROJECT</SectionHeading> 
-              <Button>blaa</Button>
-            </div>
+             
         </div>
         <div className=""></div>
         <div className='flex flex-wrap justify-between flex-col sm:flex-row gap-6 w-full'>
