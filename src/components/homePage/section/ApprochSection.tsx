@@ -8,22 +8,20 @@ import { Link } from 'react-router-dom'
 
 const ApprochSection = () => {
   const headings  = [
-    "Meeting",
-    "Listen",
-    "Q-- R",
-    "Reflection",
-    "Intuitions",
-    "Ideas",
-    "Proposals",
-    "Strategy",
-    "Design",
-    "Development",
-    "Presentation",
-    "Online chat",
-    "Accommodation",
-   " Follow-up",
-    "Maintenance",
-    "Evolution"]
+    "Discovery",
+    "Deep Dive",
+    "Question & Reflect",
+    "Insight",
+    "Conceptualise",
+    "Proposal",
+    "Blueprint",
+    "Create",
+    "Build",
+    "Reveal",
+    "Collaborate",
+    "Adjust & Refine",
+    "Support",
+   "Evolve", ]
 
   const element = useRef<HTMLDivElement>(null)
   const {scrollYProgress} = useScroll({
@@ -47,8 +45,8 @@ const ApprochSection = () => {
       </div>
 
       <article className=' sm:w-[30em] mt-12 md:text-[1.7vw]  flex flex-col gap-8 items-start'>
-        <p>Over the past 20 years, Wokine has built hundreds of digital interfaces. Through these experiments, our team developed a method to build your project, and understand all the challenges and opportunities of your digital ecosystem.</p>
-        <p>We turn your concepts into reality through carefully team-led steps. We work in the digital sector, but it is the human being who is at the heart of our approach. More than a site, we offer you personalised digital support.</p>
+        <p>Our approach is simple but powerful: we start by understanding your vision, listening closely and diving deep into the details. From there, we ask the right questions, reflect and let our intuition guide us toward innovative solutions. Ideas turn into actionable proposals, which evolve into strategic plans.</p>
+        <p> With creativity and precision, we design, develop and bring your project to life. So, what’s stopping you? Turn in your vision and get ready for perfection.</p>
         <p>So before we take action,&nbsp;
 
         <Link to={"/contact-us"}>

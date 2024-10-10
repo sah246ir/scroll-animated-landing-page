@@ -14,7 +14,7 @@ const SmartParagraph = ({text}:PropTypes) => {
     return (
         <m.p
             ref={element}
-            className="text-4xl sm:text-[3.5vw] text-black text-left leading-normal w-full sm:max-w-[54vw]"
+            className="text-4xl sm:text-[3.1vw] text-black text-left leading-normal w-full sm:max-w-[54vw]"
         >
             <Sentence scrollYProgress={scrollYProgress} sentence={
                text || `Wokine conçoit des solutions et expériences digitales qui allient créativité, technologie et engagement éthiquse.`}
