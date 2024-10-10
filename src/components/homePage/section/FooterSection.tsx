@@ -34,7 +34,7 @@ const FooterSection = () => {
                   <Link to={'/why-choose-us'}>Why choose us</Link>
                 </li>
                 <li className='transition duration-300 hover:text-white cursor-pointer'>
-                  <Link to={'/contact'}>Contact us</Link>
+                  <Link to={'/contact-us'}>Contact us</Link>
                 </li>
               </ul>
             </div>
