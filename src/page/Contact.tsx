@@ -6,12 +6,12 @@ const map = require("../media/gmap.png")
 const Contact = () => {
   return (
     <ComeUpPageWrapper >
-      <div className="flex flex-col sm:flex-row justify-between mb-14 gap-3">
+      <div className="flex flex-col sm:flex-row justify-between mb-14 gap-3 max-w-[1500px] m-auto">
         <h1 className='text-4xl font-medium'>Lets Work Together</h1>
         <p className='sm:w-[65%] text-3xl font-normal'>Our team of around 20 passionate experts designs personalised digital solutions. From advice to design to technical implementation, we make your entire digital journey.
         </p>
       </div>
-      <div className='flex flex-col items-'>
+      <div className='flex flex-col max-w-[1500px] m-auto'>
         <h2 className='text-4xl'>Contact us</h2>
 
         <div className="flex flex-col sm:flex-row gap-14 mt-6 justify-between">

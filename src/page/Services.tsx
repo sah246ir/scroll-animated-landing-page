@@ -5,7 +5,7 @@ import Service from '../components/servicesPage/Service'
 const Services = () => {
   return (
     <ComeUpPageWrapper >
-      <div className="flex flex-col sm:flex-row justify-around">
+      <div className="flex flex-col sm:flex-row justify-around max-w-[1500px] m-auto">
         <h1 className='text-4xl font-medium'>Our Services</h1>
         <p className='sm:w-[65%] text-3xl font-normal'>Our team of around 20 passionate experts designs personalised digital solutions. From advice to design to technical implementation, we make your entire digital journey.
         </p>
