@@ -49,9 +49,8 @@ const FooterSection = () => {
         <div className='flex flex-wrap justify-between flex-col sm:flex-row gap-6 w-full'>
             <div className='space-y-5'>
               <SectionHeading bullet={false}>CONTACT</SectionHeading> 
-              <p>16 place cormontaigne<br/>59000 Lille
-              France<br/></p>
-              <Button>+91 XXX-XXX-XXXX</Button>
+              <p className=''>Eureka Towers C-802, Mindspace, Malad West<br/> Mumbai<br/> 400064</p>
+                <Link to={"tel:919920010885"}><Button className='mt-6'>+91 99200 10885</Button></Link>
             </div>
 
             <div>
