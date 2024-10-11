@@ -1,6 +1,8 @@
 import React from 'react'
 import ComeUpPageWrapper from '../components/ComeUpPageWrapper'
 import ProcessCard from '../components/processPage/Process'
+import { Link } from 'react-router-dom'
+import Button from '../components/buttons/Button'
 
 const Process = () => {
     return (
@@ -44,6 +46,17 @@ const Process = () => {
                 title='Delivery and Support'
                 description="The final step is all about bringing the project to you. We make sure everything is polished, working perfectly and ready to go. But our journey doesn't end here. We stay by your side, offering support and help whenever you need it, ensuring that what we've created together continues to thrive."
             />
+
+            <div className='w-[65%] float-right px-5 max-w-[1500px]'>
+                <p className='mt-24 text-gray-400 text-2xl'>
+                    To address every challenge and impulse digital transformation, we also partner with talented agencies and companies, always with client performance and significant impact in purpose. Have you ever a digital project in mind, do not hesitate to contact us and make it real
+                </p>
+
+                <div className="mt-10">
+                    <p>Would you like to collaborate with us ?</p>
+                    <Link to={"/contact-us"}><Button className='mt-2 text-3xl'>Contact us</Button></Link>
+                </div>
+            </div>
         </ComeUpPageWrapper>
     )
 }
