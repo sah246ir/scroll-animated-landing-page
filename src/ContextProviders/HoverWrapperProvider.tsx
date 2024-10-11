@@ -12,7 +12,7 @@ export const HoverWrapperContext = createContext<HoverContextType | undefined>(u
 // Provider component
 export const HoverProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   // State for managing the position and size of the background div
-  const [style, setStyle] = useState<React.CSSProperties>({backgroundColor:"#DCF48E"});
+  const [style, setStyle] = useState<React.CSSProperties>({});
 
   const updateWrapperPosition = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
     const target = e.currentTarget.getBoundingClientRect();
@@ -47,7 +47,7 @@ export const HoverProvider: React.FC<{ children: ReactNode }> = ({ children }) =
     <HoverWrapperContext.Provider value={{ updateWrapperPosition,onLeave }}>
       <div
         style={style}
-        className="absolute rounded-full bg-lime-300 z-0 bg-opacity-80 pointer-events-none transition-all duration-300"
+        className="absolute rounded-full bg-orange-400 z-0 bg-opacity-80 pointer-events-none transition-all duration-300"
       />
       <div className="z-40">{children}</div>
     </HoverWrapperContext.Provider>

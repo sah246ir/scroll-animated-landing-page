@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
  
 const ExpertiseSection = () => {
     return (
-        <div className='py-20  bg-slate-100 px-10 flex flex-col text-center md:text-left md:flex-row items-center md:items-start md:gap-28 gap-20 justify-around'>
+        <div className='py-20  bg-slate-10 bg-gray-800  text-white px-10 flex flex-col items-center text-center md:text-left md:flex-row md:items-start md:gap-28 gap-20 justify-around'>
             <div className='md:sticky top-20'>
                 <div className="sticky top-10 w-full md:max-w-[180px] flex flex-col gap-3">
                     <SectionHeading className='justify-center md:justify-start [&>p]:text-4xl md:[&>p]:text-sm  '>
@@ -18,7 +18,7 @@ const ExpertiseSection = () => {
                     </Link>
                 </div>
             </div>
-            <div className="text-5xl md:text-3xl gap-4 md:gap-0 sm:text-6xl tracking-wider group flex items-center md:items-start flex-col ">
+            <div className="text-[5xl] md:text-[3.5vw] gap-4 md:gap-3 sm:text-6xl tracking-wider group flex items-center md:items-start flex-col ">
                 <Expertise>E-learning</Expertise>
                 <Expertise>Illustration</Expertise>
                 <Expertise>Animations</Expertise>
