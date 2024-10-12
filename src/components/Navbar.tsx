@@ -8,7 +8,7 @@ const WA = require("../media/wa.png")
 
 const Navbar = () => {
     return (
-        <nav className='py-1 flex justify-between  sticky w-full top-0 z-50 px-5 bg-white/40 backdrop-blur-lg border border-white/50 items-center'>
+        <nav className='py-1 flex justify-between  sticky w-full top-0 z-50 px-5 bg-white/80 backdrop-blur-lg border border-white/50 items-center'>
             <img width={112} src={logo} alt="logo" />
 
             <div className="flex gap-4 text-xs items-center">
