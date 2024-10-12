@@ -19,13 +19,15 @@ const ExpertiseSection = () => {
                 </div>
             </div>
             <div className="text-[5xl] md:text-[3.5vw] gap-4 md:gap-3 sm:text-6xl tracking-wider group flex items-center md:items-start flex-col ">
-                <Expertise>E-learning</Expertise>
-                <Expertise>Illustration</Expertise>
-                <Expertise>Animations</Expertise>
-                <Expertise>Translation</Expertise>
-                <Expertise>Audio & Video</Expertise>
-                <Expertise>Corporate Presentations</Expertise>
-                <Expertise>E-Publishing</Expertise>
+            <div className="text-[5xl] md:text-[3.5vw] gap-4 md:gap-3 sm:text-6xl tracking-wider group flex items-center md:items-start flex-col ">
+      <Link to="/services/e-learning"><Expertise>E-learning</Expertise></Link>
+      <Link to="/services/illustration"><Expertise>Illustration</Expertise></Link>
+      <Link to="/services/animation"><Expertise>Animations</Expertise></Link>
+      <Link to="/services/translation"><Expertise>Translation</Expertise></Link>
+      <Link to="/services/audio-video"><Expertise>Audio & Video</Expertise></Link>
+      <Link to="/services/corporate-presentations"><Expertise>Corporate Presentations</Expertise></Link>
+      <Link to="/services/e-publishing"><Expertise>E-Publishing</Expertise></Link>
+    </div>
             </div>
 
         </div>
