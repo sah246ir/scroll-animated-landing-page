@@ -4,7 +4,7 @@ import SmartParagraph from '../../smartParagraph';
 import Button from '../../buttons/Button';
 import { Link } from 'react-router-dom';
 
-const vid = require("../../../media/vid.mp4");
+const vid = require("../../../media/showreel.mp4");
 
 
 const VideoScrollSection = () => {
@@ -75,7 +75,7 @@ const VideoScrollSection = () => {
 
         <div className="sm:hidden min-h-[500px] ">
             <div >
-              <video loop className={` w-full h-[54vh] ${currentwidth === 255 ? "hover:scale-105" : ""} rounded-2xl  object-cover`} autoPlay src={vid}></video>
+              <video muted loop className={` w-full h-[54vh] ${currentwidth === 255 ? "hover:scale-105" : ""} rounded-2xl  object-cover`} autoPlay src={vid}></video>
             </div>
           <div className="w-full mt-24 flex flex-col items-center"> 
               <SmartParagraph text={`In a world that settles for ordinary, we prefer to break the mould. We're the kind that asks, “Why not?” instead of “Why?”, because we believe perfection happens when you step outside the lines. Let’s dream a little bigger, explore a little further and turn every idea into something extraordinary.`} />

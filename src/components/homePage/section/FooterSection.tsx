@@ -66,7 +66,7 @@ const FooterSection = () => {
                   <Linkedin strokeWidth={1.12} size={34}/>
                 </i>
                 </Link>
-                <Link to={"wa.me/919920010885"}>
+                <Link to={"https://wa.me/919920010885"}>
                     <img src={WA} width={35} alt="text on whatsapp" />
                 </Link>
                 

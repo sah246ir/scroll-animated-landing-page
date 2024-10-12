@@ -26,7 +26,7 @@ const Navbar = () => {
                     </button>
                 </Link>
                 <Link to={"tel:919920010885"}><Button>+91 99200 10885</Button></Link>
-                <Link to={"wa.me/919920010885"}>
+                <Link to={"https://wa.me/919920010885"}>
                     <img src={WA} width={35} alt="text on whatsapp" />
                 </Link>
                 {/* <Button>some text</Button> */}

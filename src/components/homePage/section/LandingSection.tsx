@@ -3,7 +3,7 @@ import { ArrowRight  } from 'lucide-react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const logo = require("../../../media/clekk-logo.png")
+const logo = require("../../../media/logo.png")
 const LandingSection = () => {
     return (
         <div className='h-[95vh] bg-slate-100 grid place-items-center'>
