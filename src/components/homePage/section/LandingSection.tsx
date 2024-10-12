@@ -1,12 +1,13 @@
-import { m } from 'framer-motion'
-import { ArrowRight  } from 'lucide-react'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { m } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const logo = require("../../../media/logo.png")
+const logo = require("../../../media/logo.png");
+
 const LandingSection = () => {
     return (
-        <div className='h-[95vh] bg-slate-100 grid place-items-center'>
+        <div className='h-[95vh] bg-slate-100 flex flex-col items-center justify-center relative'>
             <m.i
                 variants={{
                     visible: { y: -170 },
@@ -22,11 +23,9 @@ const LandingSection = () => {
                 }}
                 className='absolute'
             >
-
-                <img src={logo} width={345} className='opacity- ' alt='clekk logo' />
+                <img src={logo} width={345} className='opacity-100' alt='clekk logo' />
             </m.i>
-            <article className=' '>
-
+            <article className='-mt-20'> {/* Added margin to control spacing */}
                 <m.h1
                     variants={{
                         visible: { width: "100%" },
@@ -46,7 +45,7 @@ const LandingSection = () => {
                 </m.h1>
 
                 <m.button
-                    className='block overflow-hidden px-2 py-1 border rounded-full border-black m-auto mt-5 w-48  '
+                    className='block overflow-hidden px-2 py-1 border rounded-full border-black m-auto mt-5 w-48'
                     variants={{
                         visible: { opacity: 1, y: 0 },
                         hidden: { opacity: 0, y: 25 }
@@ -73,9 +72,8 @@ const LandingSection = () => {
                     </Link>
                 </m.button>
             </article>
-
         </div>
     )
 }
 
-export default LandingSection
+export default LandingSection;
