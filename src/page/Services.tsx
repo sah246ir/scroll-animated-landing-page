@@ -16,75 +16,81 @@ const Services = () => {
       <hr className='my-12 border-gray-300' />
 
       <Service
-        img='elearning1.gif'
-        title='E-Learning'
-        description='With our E-learning services, we break down traditional walls of education. Learning is not confined to the four corners of a classroom or the pages of a textbook. We bring knowledge to life, reaching out visually to empower minds wherever they are.'
-      />
+    img='elearning1.gif'
+    title='E-Learning'
+    description="We’re redefining the way people learn with our E-learning services. Forget about the limits of traditional classrooms and textbooks—learning should be dynamic, engaging, and accessible from anywhere. Our immersive content brings subjects to life, empowering learners wherever they are and making education a powerful, interactive experience."
+/>
 
-      <hr className='my-12 border-gray-300' />
+<hr className='my-12 border-gray-300' />
 
-      <Service
-        img='illustration1.gif'
-        title='Illustration'
-        description="From print to digital, Clekk's team of talented illustrators creates stunning visuals that elevate your content and engage your audience. Whether it's for marketing materials, educational resources, or digital platforms, we bring visual brilliance to life. "
-      />
+<Service
+    img='illustration1.gif'
+    title='Illustration'
+    description="Visual storytelling is our forte. At Clekk, our illustrators create stunning visuals that don’t just look good, but also connect with your audience. Whether it’s for marketing, educational content, or digital media, our illustrations go beyond aesthetics to bring your ideas to life in a way that captivates and communicates."
+/>
 
-      <hr className='my-12 border-gray-300' />
+<hr className='my-12 border-gray-300' />
 
-      <Service
-        img='animation.gif'
-        title='Animations'
-        description="'With our E-learning services, we break down traditional walls of education. Learning is not confined to the four corners of a classroom or the pages of a textbook. We bring knowledge to life, reaching out visually to empower minds wherever they are.'"
-      />
+<Service
+    img='animation.gif'
+    title='Animations'
+    description="Why settle for static when you can make it move? Our animations take your ideas and transform them into dynamic, engaging visuals. From explaining complex concepts to telling compelling stories, our animations turn heads, grab attention, and make sure your message sticks."
+/>
 
-      <hr className='my-12 border-gray-300' />
+<hr className='my-12 border-gray-300' />
 
-      <Service
-        img='creativedesign1.gif'
-        title='Creative Design'
-        description="Our expertise extends to meticulously crafting and laying out book pages for a seamless reading experience. We understand the importance of a well-designed layout in enhancing the reader's experience and conveying your message effectively. "
-      />
-      <hr className='my-12 border-gray-300' />
+<Service
+    img='creativedesign1.gif'
+    title='Creative Design'
+    description="Design is more than just making things look good—it’s about crafting a seamless experience. We design with precision, ensuring your content flows effortlessly and captures your audience’s attention. Whether it’s a book layout or a digital platform, we focus on delivering beauty and functionality in perfect balance."
+/>
 
-      <Service
-        img='translation03.gif'
-        title='Translation'
-        description="At Clekkflix, we offer top-notch translation services to help you communicate effectively across languages. Whether you're a business expanding globally or an individual needing documents translated, we've got you covered."
-      />
-      <hr className='my-12 border-gray-300' />
+<hr className='my-12 border-gray-300' />
 
-      <Service
-        img='audiovideo1.gif'
-        title='Audio & Video'
-        description="Clekkflix offers professional audio and video services to enhance your content. We bring your vision to life with precision and creativity. With state-of-the-art equipment and industry expertise, we ensure your content stands out and leaves a lasting impression."
-      />
-      <hr className='my-12 border-gray-300' />
+<Service
+    img='translation03.gif'
+    title='Translation'
+    description="Language shouldn’t be a barrier to success, and with ClekkFlix’s expert translation services, it won’t be. Whether you’re a business looking to go global or need important documents translated, we ensure your message is perfectly understood across any language and culture."
+/>
 
-      <Service
-        img='corporatepresentation1.gif'
-        title='Corporate Presentations'
-        description="At ClekkFlix, our approach to corporate presentations transcends the traditional. We believe that a powerful presentation does more than just convey information—it inspires, engages, and leaves a lasting impression. Ensuring that your brand is showcased in a light that's not only seen but felt."
-      />
-      <hr className='my-12 border-gray-300' />
+<hr className='my-12 border-gray-300' />
 
-      <Service
-        img='epublishing1.gif'
-        title='E-Publishing'
-        description="In E-Publishing, we transform the narrative. Books are no longer bound by covers but are liberated to exist in a digital realm. We take readers outside of traditional reading, into a world where stories are limitless and accessible everywhere. "
-      />
+<Service
+    img='audiovideo1.gif'
+    title='Audio & Video'
+    description="We bring your ideas to life through top-tier audio and video production. Our team knows how to take your vision and turn it into a polished product that resonates. Using cutting-edge equipment and creative flair, we produce content that not only stands out but also leaves a lasting impact on your audience."
+/>
+
+<hr className='my-12 border-gray-300' />
+
+<Service
+    img='corporatepresentation1.gif'
+    title='Corporate Presentations'
+    description="Presentations shouldn’t just convey information—they should inspire. At ClekkFlix, we design corporate presentations that do just that. We take your key messages and package them into compelling, visually engaging presentations that leave a strong, lasting impression on your audience."
+/>
+
+<hr className='my-12 border-gray-300' />
+
+<Service
+    img='epublishing1.gif'
+    title='E-Publishing'
+    description="Step into the future of storytelling with our E-publishing services. Books no longer need to be limited by physical pages. We bring stories to the digital realm, creating interactive, accessible experiences that readers can engage with anytime, anywhere. Your stories become limitless."
+/>
 
 
-      <div className='w-[65%] float-right px-5 max-w-[1500px]'>
+
+<div className='w-[65%] float-right px-5 max-w-[1500px]'>
         <p className='mt-24 text-gray-400 text-2xl'>
-          To address every challenge and impulse digital transformation, we also partner with talented agencies and companies, always with client performance and significant impact in purpose. Have you ever a digital project in mind, do not hesitate to contact us and make it real
+        At ClekkFlix, we don’t just deliver services; we partner with you to drive real digital
+transformation. Working with talented agencies and companies, we’re focused on making an
+impact where it matters most, your success.
         </p>
 
         <div className="mt-10">
-          <p>Would you like to collaborate with us ?</p>
+          <p>Have a digital project in mind?</p>
           <Link to={"/contact-us"}><Button className='mt-2 text-3xl'>Contact us</Button></Link>
         </div>
       </div>
-
 
     </ComeUpPageWrapper>
   )

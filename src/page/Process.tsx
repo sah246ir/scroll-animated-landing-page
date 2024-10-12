@@ -9,54 +9,60 @@ const Process = () => {
         <ComeUpPageWrapper >
             <div className="flex flex-col sm:flex-row justify-around mb-14 max-w-[1500px] m-auto">
                 <h1 className='text-4xl font-medium'>Our Process</h1>
-                <p className='sm:w-[65%] text-3xl font-normal'>Our team of around 20 passionate experts designs personalised digital solutions. From advice to design to technical implementation, we make your entire digital journey.
+                <p className='sm:w-[65%] text-3xl font-normal'>Our Approach
+Our team of dedicated experts specialises in creating tailored digital solutions that perfectly
+fit your unique vision. From the initial idea to the final execution, we’re with you every step of
+the way, making sure your digital journey is smooth and successful. Here's a look at how we
+bring your ideas to life!
                 </p>
             </div>
 
             <ProcessCard
-                img='vision.png'
-                index='01'
-                title='Understanding Your Vision'
-                description="We start by getting to know you and your goals. In this first step, we have a friendly chat to learn about what you need, what you dream of and what challenges you're facing. Think of it as us putting ourselves in your shoes, so we can see your world through your eyes. "
-            />
+    img='vision.png'
+    index='01'
+    title='Discovering Your Vision'
+    description="We kick things off by diving deep into your goals, dreams, and challenges. It’s more than just a meeting; it’s a conversation where we step into your shoes to understand your vision inside and out."
+/>
 
-            <hr className='my-8 border-gray-300' />
+<hr className='my-8 border-gray-300' />
 
-            <ProcessCard
-                img='planning.jpg'
-                index='02'
-                title='Planning the Journey'
-                description="Once we understand your vision, we start planning how to make it a reality. This step is all about mapping out a clear plan. We think about the best ways to achieve your goals, considering every little detail. It's like drawing a treasure map that leads us to the success of your project."
-            />
+<ProcessCard
+    img='planning.jpg'
+    index='02'
+    title='Charting the Path'
+    description="Once we get to know your world, we strategize. We map out the most efficient and effective path to bring your vision to life, down to the smallest detail. Think of it as your custom-built treasure map, leading straight to success."
+/>
 
-            <hr className='my-8 border-gray-300' />
+<hr className='my-8 border-gray-300' />
 
-            <ProcessCard
-                img='creating.jpg'
-                index='03'
-                title='Creating and Improving'
-                description="Once we understand your vision, we start planning how to make it a reality. This step is all about mapping out a clear plan. We think about the best ways to achieve your goals, considering every little detail. It's like drawing a treasure map that leads us to the success of your project."
-            />
+<ProcessCard
+    img='creating.jpg'
+    index='03'
+    title='Bringing Ideas to Life'
+    description="This is where creativity takes center stage. We build, refine, and perfect your project with precision, ensuring each step aligns with your goals. Every idea becomes tangible, turning your vision into a polished reality."
+/>
 
-            <hr className='my-8 border-gray-300' />
+<hr className='my-8 border-gray-300' />
 
-            <ProcessCard
-                img='delivery.jpg'
-                index='04'
-                title='Delivery and Support'
-                description="The final step is all about bringing the project to you. We make sure everything is polished, working perfectly and ready to go. But our journey doesn't end here. We stay by your side, offering support and help whenever you need it, ensuring that what we've created together continues to thrive."
-            />
+<ProcessCard
+    img='delivery.jpg'
+    index='04'
+    title='Launching and Beyond'
+    description="When your project is ready to launch, we ensure it’s flawless and ready to perform. But we don’t stop there—our support continues long after delivery, making sure your digital presence evolves and thrives."
+/>
 
-            <div className='w-[65%] float-right px-5 max-w-[1500px]'>
-                <p className='mt-24 text-gray-400 text-2xl'>
-                    To address every challenge and impulse digital transformation, we also partner with talented agencies and companies, always with client performance and significant impact in purpose. Have you ever a digital project in mind, do not hesitate to contact us and make it real
-                </p>
 
-                <div className="mt-10">
-                    <p>Would you like to collaborate with us ?</p>
-                    <Link to={"/contact-us"}><Button className='mt-2 text-3xl'>Contact us</Button></Link>
-                </div>
-            </div>
+<div className='w-[65%] float-right px-5 max-w-[1500px]'>
+        <p className='mt-24 text-gray-400 text-2xl'>
+        We don’t just solve challenges; we drive digital transformation. By partnering with top
+        agencies and companies, we stay focused on making a meaningful impact
+        </p>
+
+        <div className="mt-10">
+          <p>Have a digital project in mind?</p>
+          <Link to={"/contact-us"}><Button className='mt-2 text-3xl'>Contact us</Button></Link>
+        </div>
+      </div>
         </ComeUpPageWrapper>
     )
 }
