@@ -51,9 +51,10 @@ bring your ideas to life!
     description="When your project is ready to launch, we ensure it’s flawless and ready to perform. But we don’t stop there—our support continues long after delivery, making sure your digital presence evolves and thrives."
 />
 
+<hr className='mt-12 border-gray-300' />
 
 <div className='w-[65%] float-right px-5 max-w-[1500px]'>
-        <p className='mt-24 text-gray-400 text-2xl'>
+        <p className='mt-24 text-orange-300 text-2xl'>
         We don’t just solve challenges; we drive digital transformation. By partnering with top
         agencies and companies, we stay focused on making a meaningful impact
         </p>

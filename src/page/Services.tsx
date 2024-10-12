@@ -85,6 +85,7 @@ const Services = () => {
         title='E-Publishing'
         description="Step into the future of storytelling with our E-publishing services. Books no longer need to be limited by physical pages. We bring stories to the digital realm, creating interactive, accessible experiences that readers can engage with anytime, anywhere. Your stories become limitless."
       />
+      <hr className='mt-12 border-gray-300' />
 
       <div className='w-[65%] float-right px-5 max-w-[1500px]'>
         <p className='mt-24 text-orange-300 text-2xl'>

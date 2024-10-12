@@ -62,9 +62,10 @@ const WhyChooseUs = () => {
         description="We are dedicated to bringing your vision to life through professional audio and video services. With the latest technology and industry expertise, we deliver content that not only stands out but also leaves a lasting impact. From concept to completion, your success is our priority."
       />
 
+<hr className='mt-12 border-gray-300' />
 
       <div className='w-[65%] float-right px-5 max-w-[1500px]'>
-        <p className='mt-24 text-gray-400 text-2xl'>
+        <p className='mt-24 text-orange-300 text-2xl'>
         We believe that digital transformation requires more than just expertise, it requires
 collaboration and innovation. That’s why we partner with forward-thinking agencies and
 companies to make sure your project is a success.

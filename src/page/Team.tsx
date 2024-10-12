@@ -28,8 +28,9 @@ excellence
           <LeaderCard className='lg:w-[23%] sm:w-[48%]' name='John doe' designation='CTO' />
         </div>
       </div>
+      <hr className='mt-12 border-gray-300' />
       <div className='w-[65%] float-right px-5 max-w-[1500px]'>
-        <p className='mt-24 text-gray-400 text-2xl'>
+        <p className='mt-24 text-orange-300 text-2xl'>
           To ensure that every challenge is met with precision, we collaborate with leading agencies
           and companies, always with a focus on maximising client success and making a meaningful
           impact.
