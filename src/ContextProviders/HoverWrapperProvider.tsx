@@ -47,7 +47,7 @@ export const HoverProvider: React.FC<{ children: ReactNode }> = ({ children }) =
     <HoverWrapperContext.Provider value={{ updateWrapperPosition,onLeave }}>
       <div
         style={style}
-        className="absolute rounded-full bg-orange-400 z-0 bg-opacity-80 pointer-events-none transition-all duration-300"
+        className="absolute rounded-full bg-orange-500 z-0 bg-opacity-80 pointer-events-none transition-all duration-300"
       />
       <div className="z-40">{children}</div>
     </HoverWrapperContext.Provider>
