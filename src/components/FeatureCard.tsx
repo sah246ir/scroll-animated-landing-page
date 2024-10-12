@@ -13,7 +13,7 @@ const Feature = ({ title, description, img }: PropTypes) => {
                 <img className='w-[55%]' src={immg} alt="" />
             </div>
             <div className='w-[75%]' >
-                <h1 className='text-2xl  text-gray-700 font-medium'>{title}</h1>
+                <h1 className='text-2xl  text-orange-600 font-medium'>{title}</h1>
                 <p className='text-2xl font-normal' style={{ height: '100%' }}>
                     {description}
                 </p>

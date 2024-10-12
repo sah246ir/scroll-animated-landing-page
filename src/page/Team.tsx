@@ -8,8 +8,8 @@ const Team = () => {
   return (
     <ComeUpPageWrapper>
       <div className="flex flex-col sm:flex-row justify-between gap-8 mb-14 max-w-[1500px] m-auto">
-        <h1 className='text-4xl font-medium'>Meet Our Experts</h1>
-        <p className='sm:w-[65%] text-3xl font-normal'>Our team is a powerhouse of industry veterans, creative designers, tech innovators and
+        <h1 className='text-4xl text-orange-600 font-medium'>Meet Our Experts</h1>
+        <p className='sm:w-[65%] text-2xl font-normal'>Our team is a powerhouse of industry veterans, creative designers, tech innovators and
 education specialists, all working in harmony to craft customised solutions that bring your
 vision to life. Every project we tackle is a blend of expertise, creativity and a passion for
 excellence

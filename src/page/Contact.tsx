@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <ComeUpPageWrapper >
       <div className="flex flex-col sm:flex-row justify-between mb-14 gap-3 max-w-[1500px] m-auto">
-        <h1 className='text-4xl font-medium'>Lets Work Together</h1>
-        <p className='sm:w-[65%] text-3xl font-normal'>Our dedicated team offers comprehensive digital solutions that are designed to meet your exact requirements. We partner with you throughout the entire process, providing expert guidance and ensuring a successful outcome.
+        <h1 className='text-4xl text-orange-600 font-medium'>Lets Work Together</h1>
+        <p className='sm:w-[65%] text-2xl font-normal'>Our dedicated team offers comprehensive digital solutions that are designed to meet your exact requirements. We partner with you throughout the entire process, providing expert guidance and ensuring a successful outcome.
         </p>
       </div>
       <div className='flex flex-col max-w-[1500px] m-auto'>
