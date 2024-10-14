@@ -8,7 +8,7 @@ import Button from '../components/buttons/Button'
 const WhyChooseUs = () => {
   return (
     <ComeUpPageWrapper>
-      <div className="flex flex-col sm:flex-row justify-around mb-14 max-w-[1500px] m-auto">
+      <div className="flex flex-col text-center sm:text-left sm:flex-row justify-around mb-14 max-w-[1500px] m-auto">
         <h1 className='text-4xl text-orange-600 font-medium'>Our Expertise</h1>
         <p className='sm:w-[65%] text-2xl font-normal'>Our team of around 20 passionate experts designs personalised digital solutions. From advice to design to technical implementation, we make your entire digital journey.
         </p>

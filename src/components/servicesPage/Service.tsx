@@ -11,12 +11,12 @@ interface PropTypes {
 const Service = ({ title, description, img ,href}: PropTypes) => {
   const immg = require(`../../media/services/${img}`) 
   return (
-    <div className="flex justify-around items-center gap-4 max-w-[1500px] m-auto  ">
+    <div className="flex flex-col sm:flex-row justify-around items-center gap-4 max-w-[1500px] m-auto  ">
       <div className='flex flex-grow flex-col gap-6 justify-between items-center' style={{ height: '100%' }}>
         <h1 className='text-xl  text-gray-700 font-medium'>{title}</h1>
-        <img className='w-[7.5vw] h-full' src={immg} alt="" />
+        <img className='sm:w-[7.5vw] h-full' src={immg} alt="" />
       </div>
-      <div className='w-[65%]'>
+      <div className='sm:w-[65%]'>
         <p className=' text-2xl font-normal' style={{ height: '100%' }}>
           {description}
         </p>

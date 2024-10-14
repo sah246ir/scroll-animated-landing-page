@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Services = () => {
   return (
     <ComeUpPageWrapper>
-      <div className="flex flex-col sm:flex-row justify-around max-w-[1500px] m-auto">
+      <div className="flex flex-col text-center sm:text-left sm:flex-row justify-around max-w-[1500px] m-auto">
         <h1 className='text-4xl text-orange-600 font-medium'>Our Services</h1>
         <p className='sm:w-[65%] text-2xl font-normal'>
         We specialize in turning your digital vision into reality. Our team of experts works closely with you to develop tailored solutions that perfectly suit your unique needs. From initial brainstorming to final implementation, we're here to support you every step of the way.
