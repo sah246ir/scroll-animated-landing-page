@@ -42,8 +42,8 @@ const GallerySection = () => {
     )
     return (
         <section style={{ backgroundColor: "#181717" }} className='p-9 py-12   text-white gap-16'>
-            <h1 className='text-[5vw] whitespace-nowrap text-center mb-7'>
-                <Star size={35} className='inline fill-gray-300'/> 
+            <h1 className='text-[5vw] whitespace-nowrap text-center mb-7 text-orange-600'>
+                <Star size={35} className='inline fill-orange-600 text-orange-500'/> 
                 &nbsp;
                 Our portfolio
             </h1> 

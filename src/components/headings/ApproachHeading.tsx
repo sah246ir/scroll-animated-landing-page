@@ -11,7 +11,7 @@ const ApproachHeading = ({children,range,scrollYProgress}:PropTypes) => {
     const opacity = useTransform(scrollYProgress, range, [0, 1])
     const x = useTransform(scrollYProgress,range,[-30,0], )
     return (
-        <div className='relative'>
+        <div className='relative text-orange-600'>
             <m.div style={{x,fontSize:"3.787037037vw"}} className="-z-10 transition-all duration-500  absolute text-5xl text-gray-100">{children}
                 <ArrowRight className='inline  sm:size-12' />
             </m.div>
