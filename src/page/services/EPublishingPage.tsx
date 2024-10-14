@@ -1,5 +1,6 @@
 import React from 'react';
 import ComeUpPageWrapper from '../../components/ComeUpPageWrapper';
+import ProcessCard from '../../components/processPage/Process'; // Import ProcessCard
 
 const EPublishingPage: React.FC = () => {
   return (
@@ -14,37 +15,56 @@ const EPublishingPage: React.FC = () => {
 
       <hr className='mb-12 border-gray-300' />
 
-      {/* Second div: Detailed Content */}
-      <div className="px-4 py-8 max-w-4xl mx-auto text-center">
-        {/* E-Publishing Transformation */}
-        <p className="text-lg leading-7 mb-4">
-          Books are no longer bound by covers but are liberated to exist in a digital realm. We take readers outside of traditional reading into a world where stories are limitless and accessible everywhere.
-        </p>
+      {/* Second div: ProcessCards for Detailed Content */}
+      <div className="px-4 py-8 max-w-4xl mx-auto">
 
-        {/* Revolutionising Written Work */}
-        <p className="text-lg leading-7 mb-4">
-          Revolutionise your written work with our E-Publishing services, designed to take your publishing presence to the next level. Step into the future where your books are not just bound by covers but are accessible at the click of a button.
-        </p>
+        {/* ProcessCard: E-Publishing Transformation */}
+        <ProcessCard
+          img="delivery.jpg" // Replace with actual image if needed
+          index="01"
+          title="E-Publishing Transformation"
+          description="Books are no longer bound by covers but are liberated to exist in a digital realm. We take readers outside of traditional reading into a world where stories are limitless and accessible everywhere."
+        />
 
-        {/* Seamless Transformation */}
-        <p className="text-lg leading-7 mb-4">
-          Experience the seamless transformation of print books into eBooks. Our expert services ensure your content is not just digitised but optimised for the best e-reading experience. Tap into the global market and connect with readers across continents.
-        </p>
+        {/* ProcessCard: Revolutionising Written Work */}
+        <ProcessCard
+          img="delivery.jpg" // Replace with actual image if needed
+          index="02"
+          title="Revolutionising Written Work"
+          description="Revolutionise your written work with our E-Publishing services, designed to take your publishing presence to the next level. Step into the future where your books are not just bound by covers but are accessible at the click of a button."
+        />
 
-        {/* Breaking Down Barriers */}
-        <p className="text-lg leading-7 mb-4">
-          Our E-Publishing solutions make your work available and accessible to a worldwide audience, breaking down geographical barriers.
-        </p>
+        {/* ProcessCard: Seamless Transformation */}
+        <ProcessCard
+          img="delivery.jpg" // Replace with actual image if needed
+          index="03"
+          title="Seamless Transformation"
+          description="Experience the seamless transformation of print books into eBooks. Our expert services ensure your content is not just digitised but optimised for the best e-reading experience. Tap into the global market and connect with readers across continents."
+        />
 
-        {/* Expanding Reach */}
-        <p className="text-lg leading-7 mb-4">
-          Leverage the potential of digital platforms to expand your reach. With E-Publishing, your work gains unlimited exposure, providing more opportunities for discovery, sharing, and discussion among readers.
-        </p>
+        {/* ProcessCard: Breaking Down Barriers */}
+        <ProcessCard
+          img="delivery.jpg" // Replace with actual image if needed
+          index="04"
+          title="Breaking Down Barriers"
+          description="Our E-Publishing solutions make your work available and accessible to a worldwide audience, breaking down geographical barriers."
+        />
 
-        {/* Call to Action */}
-        <p className="text-lg leading-7">
-          Embrace the power and possibilities of E-Publishing with us. Whether you’re a seasoned author or a new voice, we’re here to support you.
-        </p>
+        {/* ProcessCard: Expanding Reach */}
+        <ProcessCard
+          img="delivery.jpg" // Replace with actual image if needed
+          index="05"
+          title="Expanding Reach"
+          description="Leverage the potential of digital platforms to expand your reach. With E-Publishing, your work gains unlimited exposure, providing more opportunities for discovery, sharing, and discussion among readers."
+        />
+
+        {/* ProcessCard: Call to Action */}
+        <ProcessCard
+          img="delivery.jpg" // Replace with actual image if needed
+          index="06"
+          title="Call to Action"
+          description="Embrace the power and possibilities of E-Publishing with us. Whether you’re a seasoned author or a new voice, we’re here to support you."
+        />
       </div>
     </ComeUpPageWrapper>
   );

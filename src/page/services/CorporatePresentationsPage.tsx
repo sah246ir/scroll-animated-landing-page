@@ -1,5 +1,6 @@
 import React from 'react';
 import ComeUpPageWrapper from '../../components/ComeUpPageWrapper';
+import ProcessCard from '../../components/processPage/Process';
 
 const CorporatePresentationsPage: React.FC = () => {
   return (
@@ -14,37 +15,55 @@ const CorporatePresentationsPage: React.FC = () => {
 
       <hr className='mb-12 border-gray-300' />
 
-      {/* Second div: Detailed Content */}
-      <div className="px-4 py-8 max-w-4xl mx-auto text-center">
-        {/* Service Overview Section */}
-        <p className="text-lg leading-7 mb-4">
-          Our expert team creates presentations that leave a lasting impression, showcasing your brand’s identity and values. We believe that a powerful presentation does more than just convey information—it inspires, engages, and leaves a lasting impression.
-        </p>
+      {/* Second div: ProcessCards for Detailed Content */}
+      <div className="px-4 py-8 max-w-4xl mx-auto">
+        {/* ProcessCard: Service Overview */}
+        <ProcessCard
+          img="delivery.jpg" // Using delivery.jpg for all images
+          index="01"
+          title="Service Overview"
+          description="Our expert team creates presentations that leave a lasting impression, showcasing your brand’s identity and values. We believe that a powerful presentation does more than just convey information—it inspires, engages, and leaves a lasting impression."
+        />
 
-        {/* Importance of Communication Section */}
-        <p className="text-lg leading-7 mb-4">
-          In the world of business, effective communication is key, and a powerful corporate presentation can make all the difference. Our services are designed to help your company shine in every meeting, pitch, and conference.
-        </p>
+        {/* ProcessCard: Importance of Communication */}
+        <ProcessCard
+          img="delivery.jpg" // Using delivery.jpg for all images
+          index="02"
+          title="Importance of Communication"
+          description="In the world of business, effective communication is key, and a powerful corporate presentation can make all the difference. Our services are designed to help your company shine in every meeting, pitch, and conference."
+        />
 
-        {/* Specialization Section */}
-        <p className="text-lg leading-7 mb-4">
-          We specialize in creating corporate presentations that are not only visually engaging but also strategically structured to convey your message clearly and impactfully. Whether you're presenting to stakeholders, clients, or your own team, we ensure your presentation captures the essence of your corporate identity and objectives.
-        </p>
+        {/* ProcessCard: Specialization */}
+        <ProcessCard
+          img="delivery.jpg" // Using delivery.jpg for all images
+          index="03"
+          title="Specialization"
+          description="We specialize in creating corporate presentations that are not only visually engaging but also strategically structured to convey your message clearly and impactfully. Whether you're presenting to stakeholders, clients, or your own team, we ensure your presentation captures the essence of your corporate identity and objectives."
+        />
 
-        {/* Branding Consistency Section */}
-        <p className="text-lg leading-7 mb-4">
-          Moreover, we ensure that your corporate presentation aligns with your brand's ethos and aesthetic. Consistency in branding is vital, and our presentations reinforce your brand identity in every slide, chart, and graphic.
-        </p>
+        {/* ProcessCard: Branding Consistency */}
+        <ProcessCard
+          img="delivery.jpg" // Using delivery.jpg for all images
+          index="04"
+          title="Branding Consistency"
+          description="Moreover, we ensure that your corporate presentation aligns with your brand's ethos and aesthetic. Consistency in branding is vital, and our presentations reinforce your brand identity in every slide, chart, and graphic."
+        />
 
-        {/* Conclusion Section */}
-        <p className="text-lg leading-7 mb-4">
-          In today's fast-paced business environment, staying ahead means being able to communicate complex ideas in simple, engaging ways. Let us help you create a corporate presentation that not only informs and persuades but also leaves a lasting impression on your audience.
-        </p>
+        {/* ProcessCard: Conclusion */}
+        <ProcessCard
+          img="delivery.jpg" // Using delivery.jpg for all images
+          index="05"
+          title="Conclusion"
+          description="In today's fast-paced business environment, staying ahead means being able to communicate complex ideas in simple, engaging ways. Let us help you create a corporate presentation that not only informs and persuades but also leaves a lasting impression on your audience."
+        />
 
-        {/* Call to Action Section */}
-        <p className="text-lg leading-7">
-          Contact us to begin crafting your standout corporate presentation that reflects the professionalism, values, and vision of your business.
-        </p>
+        {/* ProcessCard: Call to Action */}
+        <ProcessCard
+          img="delivery.jpg" // Using delivery.jpg for all images
+          index="06"
+          title="Call to Action"
+          description="Contact us to begin crafting your standout corporate presentation that reflects the professionalism, values, and vision of your business."
+        />
       </div>
     </ComeUpPageWrapper>
   );

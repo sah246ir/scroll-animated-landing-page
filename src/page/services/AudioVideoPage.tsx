@@ -1,5 +1,6 @@
 import React from 'react';
 import ComeUpPageWrapper from '../../components/ComeUpPageWrapper';
+import ProcessCard from '../../components/processPage/Process';
 
 const AudioVideoPage: React.FC = () => {
   return (
@@ -15,26 +16,38 @@ const AudioVideoPage: React.FC = () => {
       <hr className='mb-12 border-gray-300' />
 
       {/* Second div: Detailed Content */}
-      <div className="px-4 py-8 max-w-4xl mx-auto text-center">
-        {/* Service Overview Section */}
-        <p className="text-lg leading-7 mb-4">
-          Clekkflix offers comprehensive audio and video services to elevate your content and engage your audience effectively. Whether you need professional video editing or full-scale production, we have the expertise to bring your vision to life.
-        </p>
+      <div className="px-4 py-8 max-w-4xl mx-auto">
+        {/* ProcessCard: Service Overview */}
+        <ProcessCard
+          img="delivery.jpg" // Using delivery.jpg for all images
+          index="01"
+          title="Service Overview"
+          description="Clekkflix offers comprehensive audio and video services to elevate your content and engage your audience effectively. Whether you need professional video editing or full-scale production, we have the expertise to bring your vision to life."
+        />
+        
+        {/* ProcessCard: Team Expertise */}
+        <ProcessCard
+          img="delivery.jpg" // Using delivery.jpg for all images
+          index="02"
+          title="Team Expertise"
+          description="Our team of experienced professionals ensures that every aspect of your audio and video projects is handled with precision and creativity. From scriptwriting to final editing, we pay attention to every detail to ensure the highest quality results."
+        />
 
-        {/* Team Expertise Section */}
-        <p className="text-lg leading-7 mb-4">
-          Our team of experienced professionals ensures that every aspect of your audio and video projects is handled with precision and creativity. From scriptwriting to final editing, we pay attention to every detail to ensure the highest quality results.
-        </p>
+        {/* ProcessCard: Equipment & Techniques */}
+        <ProcessCard
+          img="delivery.jpg" // Using delivery.jpg for all images
+          index="03"
+          title="Equipment & Techniques"
+          description="With Clekkflix, you can trust that your audio and video content will stand out in today's competitive landscape. We utilize state-of-the-art equipment and industry-leading techniques to deliver stunning visuals and crystal-clear audio that leaves a lasting impression."
+        />
 
-        {/* Equipment & Techniques Section */}
-        <p className="text-lg leading-7 mb-4">
-          With Clekkflix, you can trust that your audio and video content will stand out in today's competitive landscape. We utilize state-of-the-art equipment and industry-leading techniques to deliver stunning visuals and crystal-clear audio that leaves a lasting impression.
-        </p>
-
-        {/* Conclusion Section */}
-        <p className="text-lg leading-7 mb-4">
-          Experience the difference with Clekkflix's audio and video services. Let us help you tell your story in a compelling and memorable way, allowing you to connect with your audience on a deeper level and achieve your objectives. With Clekkflix, your audio and video projects are in good hands.
-        </p>
+        {/* ProcessCard: Conclusion */}
+        <ProcessCard
+          img="delivery.jpg" // Using delivery.jpg for all images
+          index="04"
+          title="Conclusion"
+          description="Experience the difference with Clekkflix's audio and video services. Let us help you tell your story in a compelling and memorable way, allowing you to connect with your audience on a deeper level and achieve your objectives. With Clekkflix, your audio and video projects are in good hands."
+        />
       </div>
     </ComeUpPageWrapper>
   );
