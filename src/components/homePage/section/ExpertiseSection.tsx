@@ -12,7 +12,7 @@ const ExpertiseSection = () => {
                     <SectionHeading className='justify-center md:justify-start [&>p]:text-4xl md:[&>p]:text-sm  '>
                          Our Expertise 
                     </SectionHeading>
-                    <p className='text-2xl md:text-sm'>Des compétences au service de votre performance</p>
+                    <p className='text-2xl md:text-sm'>Expertise dedicated to enhancing your success</p>
                     <Link to={"/services"} className='mt-4 font-light text-2xl md:text-sm '>
                         <Button>View all services</Button>
                     </Link>
