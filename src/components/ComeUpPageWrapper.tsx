@@ -24,7 +24,7 @@ const ComeUpPageWrapper = ({children}:PropTypes) => {
       }}
       >
         <div className='h-screen bg-white px-5 py-20 rounded-3xl relative  overflow-auto'>
-          <button onClick={()=>navigate(-1)} className='absolute right-3 top-3 bg-black w-12 h-12 rounded-full grid place-items-center'>
+          <button onClick={()=>navigate(-1)} className='transition duration-300  fixed right-14 top-14 bg-black w-12 h-12 hover:scale-110 rounded-full grid place-items-center'>
               <X stroke='white'/>
           </button>
           {children}
