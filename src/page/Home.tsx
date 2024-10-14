@@ -1,5 +1,5 @@
 import React from 'react'
-import LandingSection from '../components/homePage/section/LandingSection'
+// import LandingSection from '../components/homePage/section/LandingSection'
 import VideoScrollSection from '../components/homePage/section/VideoScrollSection'
 import ExpertiseSection from '../components/homePage/section/ExpertiseSection'
 import GallerySection from '../components/homePage/section/GallerySection'
@@ -29,7 +29,7 @@ const Home = () => {
 
             <HoverProvider>
                 <Navbar />
-                <LandingSection />
+                {/* <LandingSection /> */}
                 <VideoScrollSection />
                 <ExpertiseSection />
                 <ApprochSection />
