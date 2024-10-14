@@ -25,7 +25,7 @@ const LandingSection = () => {
             >
                 <img src={logo} width={345} className='opacity-100' alt='clekk logo' />
             </m.i>
-            <article className='-mt-20'> {/* Added margin to control spacing */}
+            <article className='-mt-36 sm:-mt-28'> {/* Added margin to control spacing */}
                 <m.h1
                     variants={{
                         visible: { width: "100%" },
