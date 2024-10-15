@@ -18,8 +18,8 @@ const ExpertiseSection = () => {
                     </Link>
                 </div>
             </div>
-            <div className="text-[5xl] md:text-[3.5vw] gap-4 md:gap-3 sm:text-6xl tracking-wider group flex items-center md:items-start flex-col ">
-            <div className="text-[5xl] md:text-[3.5vw] gap-4 md:gap-3 sm:text-6xl tracking-wider group flex items-center md:items-start flex-col ">
+            <div className="text-[5xl] md:text-[3vw] gap-4 md:gap-3 sm:text-6xl tracking-wider group flex items-center md:items-start flex-col ">
+            <div className="text-[5xl] md:text-[3vw] gap-4 md:gap-3 sm:text-6xl tracking-wider group flex items-center md:items-start flex-col ">
       <Link to="/services/e-learning"><Expertise>E-learning</Expertise></Link>
       <Link to="/services/illustration"><Expertise>Illustration</Expertise></Link>
       <Link to="/services/animation"><Expertise>Animations</Expertise></Link>
