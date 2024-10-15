@@ -49,7 +49,7 @@ const VideoScrollSection = () => {
   const height = useTransform(
     scrollYProgress,
     [0, 0.5, 1],
-    [window.screen.height - 225, window.screen.height / 2, minHeight],
+    [window.screen.height - 325, window.screen.height / 2, minHeight],
   );
 
   useMotionValueEvent(width, "change", (latest) => {
@@ -65,7 +65,7 @@ const VideoScrollSection = () => {
               <video
                 loop
                 muted // Ensure muted for autoplay
-                className={`w-full h-full ${currentwidth === 255 ? "hover:scale-105" : ""} rounded-2xl object-cover`}
+                className={`w-full h-full transition-all duration-500 ${currentwidth === 255 ? "hover:scale-105" : ""} rounded-2xl object-cover`}
                 autoPlay
                 playsInline // Added for better compatibility
                 src={vid}
