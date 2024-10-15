@@ -69,6 +69,7 @@ const VideoScrollSection = () => {
                 autoPlay
                 playsInline // Added for better compatibility
                 src={vid}
+                controls
               />
             </m.div>
           </div>
