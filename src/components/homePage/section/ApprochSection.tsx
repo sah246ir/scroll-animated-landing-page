@@ -55,7 +55,7 @@ const ApprochSection = () => {
         </Link>
         </p>
         <Link to={'/process'}>
-          <Button className='text-xl'>Our approach
+          <Button className='text-xl'>Know More
           </Button>
         </Link>
       </article>
