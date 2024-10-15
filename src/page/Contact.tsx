@@ -3,6 +3,7 @@ import ComeUpPageWrapper from '../components/ComeUpPageWrapper'
 import { Link } from 'react-router-dom'
 
 const map = require("../media/gmap.png")
+const logo = require("../media/logo.png")
 const Contact = () => {
   return (
     <ComeUpPageWrapper >
@@ -35,6 +36,7 @@ const Contact = () => {
 
           <div className="sm:w-[40%] space-y-2">
             <div className="">
+              <img src={logo} width={125} className='mb-3' alt="" />
               <h2 className='font-medium text-gray-800'>Address:</h2>
               <p className='mb-2'>Eureka Towers C-802, Chincholi Bunder Rd, Mindspace, Malad West, Mumbai - 400064, Maharashtra, India.</p>
               <Link
