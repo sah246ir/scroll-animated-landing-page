@@ -10,9 +10,9 @@ const ExpertiseSection = () => {
             <div className='md:sticky top-20'>
                 <div className="sticky top-10 w-full md:max-w-[180px] flex flex-col gap-3">
                     <SectionHeading className='justify-center md:justify-start [&>p]:text-4xl md:[&>p]:text-sm  '>
-                         Our Expertise 
+                         Our Services 
                     </SectionHeading>
-                    <p className='text-2xl md:text-sm'>Expertise dedicated to enhancing your success</p>
+                    <p className='text-2xl md:text-sm'>Services dedicated to enhancing your success</p>
                     <Link to={"/services"} className='mt-4 font-light text-2xl md:text-sm '>
                         <Button>View all services</Button>
                     </Link>
