@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { Instagram, Linkedin } from 'lucide-react';
 
 const vid = require("../../../media/showreel.mp4");
-const logo = require("../../../media/logo-2.png")
+const logo = require("../../../media/logo.png")
 const WA = require("../../../media/wa.png")
 const FooterSection = () => {
   return (
@@ -14,8 +14,10 @@ const FooterSection = () => {
     <section style={{ backgroundColor: "#181717", zIndex: 999 }} className='p-9 py-12 flex justify-between min-h-[450px] text-white gap-16 flex-col sm:flex-row items-center sm:items-stretch text-center sm:text-left relative'>
       <div className='flex min-h-full gap-6 flex-col justify-between items-center sm:items-start max-w-[410px]'>
         <div className=''>
-          <img width={162} src={logo} className='rounded-md' alt="" />
-          <h2 className='text-2xl  mt-5'>
+          <div className='bg-white p-2 py-4 sm:max-w-[200px]'>
+            <img width={162} src={logo} className='rounded-md m-auto' alt="" />
+          </div>
+          <h2 className='text-2xl  mt-4'>
             Creating marvelous user experience
             for your brand, seamlessly.
           </h2>
