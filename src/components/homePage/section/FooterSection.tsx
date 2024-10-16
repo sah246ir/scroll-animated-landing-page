@@ -27,7 +27,7 @@ const FooterSection = () => {
       <div className='flex flex-col justify-around items-end  gap-7 w-[50%]'>
         <div className='flex flex-wrap flex-col sm:flex-row  text-white gap-12 sm:gap-24 w-full justify-'>
           <div>
-            <SectionHeading className='mb-4 font-semibold [&_p]:text-xl  ' bullet={false}>Quick Links</SectionHeading>
+            <h3 className='mb-4 font-semibold [&_p]:text-xl text-center sm:text-left  ' >Quick Links</h3>
             <ul className='transition duration-300 text-lg space-y-2  hover:text-gray-800'>
               <li className='transition duration-300 hover:text-white cursor-pointer'>
                 <Link to={'/process'}>Our approach</Link>
@@ -48,7 +48,7 @@ const FooterSection = () => {
           </div>
 
           <div>
-            <SectionHeading className='mb-4 font-semibold [&_p]:text-xl ' bullet={false}>Services</SectionHeading>
+            <h3 className='mb-4 font-semibold [&_p]:text-xl text-center sm:text-left  ' >Services</h3>
             <ul className='transition duration-300 text-lg space-y-2  hover:text-gray-800'>
               <li className='transition duration-300 hover:text-white cursor-pointer'>
                 <Link to={'/process'}>E-learning</Link>
@@ -71,14 +71,14 @@ const FooterSection = () => {
         <div className=""></div>
         <div className='flex flex-wrap justify-between flex-col sm:flex-row gap-6 w-full'>
           <div className='space-y-5'>
-            <SectionHeading bullet={false}>CONTACT</SectionHeading>
+            <h3 className='mb-4 font-semibold [&_p]:text-xl text-center sm:text-left  ' >Contact</h3>
             <p className=''>Eureka Towers C-802, Mindspace, Malad West<br /> Mumbai<br /> 400064</p>
             <Link to={"tel:919920010885"}><Button className='mt-6'>+91 99200 10885</Button></Link>
           </div>
 
           <div>
-            <SectionHeading className='mb-5' bullet={false}>Follow us on</SectionHeading>
-            <div className="flex gap-4 flex-wrap  hover:text-gray-800">
+            <h3 className='mb-4 font-semibold [&_p]:text-xl text-center sm:text-left mt-10 sm:mt-0  ' >Follow us on</h3>
+            <div className="flex gap-4 flex-wrap justify-center sm:justify-start  hover:text-gray-800">
               <Link target='_blank' to={"https://www.instagram.com/clekkflix"}>
                 <i className='transition duration-300 hover:text-pink-600 cursor-pointer'>
                   <Instagram size={34} />
