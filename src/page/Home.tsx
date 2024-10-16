@@ -23,7 +23,7 @@ const Home = () => {
             exit={"exit"}
             animate={"visible"}
             transition={{
-                duration: "1"
+                duration:.35
             }}
         >
 
