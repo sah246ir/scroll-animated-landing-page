@@ -9,7 +9,7 @@ const Process = () => {
         <ComeUpPageWrapper >
             <div className="flex flex-col sm:flex-row justify-around mb-14 max-w-[1500px] m-auto">
                 <h1 className='text-4xl text-orange-600 font-medium'>Our Approach</h1>
-                <p className='sm:w-[65%] text-2xl font-normal'>Our Approach
+                <p className='sm:w-[65%] text-2xl font-normal'>
                     Our team of dedicated experts specialises in creating tailored digital solutions that perfectly
                     fit your unique vision. From the initial idea to the final execution, we’re with you every step of
                     the way, making sure your digital journey is smooth and successful. Here's a look at how we
