@@ -75,7 +75,7 @@ const Char = ({ char, range, scrollYProgress }: CharProps) => {
     const opacity = useTransform(scrollYProgress, range, [0, 1])
     return (
         <span className='relative'>
-            <span className='opacity-[0.3] absolute'>{char}</span>
+            <span className='opacity-[0.3] absolute left-0 -bottom-1.5'>{char}</span>
             <m.span style={{ opacity }} className='transition duration-300'>{char}</m.span>
         </span>
     )
