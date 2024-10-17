@@ -63,7 +63,7 @@ const VideoScrollSection = () => {
         <div ref={containerref} className="relative min-h-[2000px] h-[2000px] hidden sm:flex items-end">
           <div className="absolute bottom-0 right-0 min-h-[2000px] h-[2000px] flex items-end">
             <m.div style={{ width, height, transition: "400ms" }} className="sticky bottom-10 right-0 z-40">
-              <img src={logo} className='absolute left-2 top-3 opacity-80 w-[15%]  ' alt="" />
+              {/* <img src={logo} className='absolute left-2 top-3 opacity-80 w-[15%]  ' alt="" /> */}
               <video
                 loop
                 muted // Ensure muted for autoplay
