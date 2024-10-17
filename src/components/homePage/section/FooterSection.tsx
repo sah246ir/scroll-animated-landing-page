@@ -1,5 +1,4 @@
 import React from 'react'
-import SectionHeading from '../../headings/SectionHeading';
 import Button from '../../buttons/Button';
 import { Link } from 'react-router-dom';
 import { Instagram, Linkedin } from 'lucide-react';
