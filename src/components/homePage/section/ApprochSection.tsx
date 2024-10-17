@@ -37,7 +37,7 @@ const ApprochSection = () => {
           const start = i / headings.length;
           const end = start + (1 / headings.length)
           return(
-            <ApproachHeading scrollYProgress={scrollYProgress} range={[start,end]}  >
+            <ApproachHeading arrow={i!==headings.length-1} scrollYProgress={scrollYProgress} range={[start,end]}  >
               {head}
             </ApproachHeading> 
           )
