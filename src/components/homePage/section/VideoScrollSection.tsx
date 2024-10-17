@@ -12,9 +12,7 @@ const VideoScrollSection = () => {
     height: 0,
     width: 0
   });
-  const [currentwidth, setCurrentwidth] = useState<number>(0);
-  const minWidth = 255;
-  const minHeight = 150;
+  const [currentwidth, setCurrentwidth] = useState<number>(0); 
 
   const { scrollYProgress } = useScroll({
     target: containerref,
