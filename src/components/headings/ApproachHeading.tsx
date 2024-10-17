@@ -17,7 +17,7 @@ const ApproachHeading = ({children,range,scrollYProgress}:PropTypes) => {
             </m.div>
             <m.h1 style={{opacity,x,fontSize:"3.787037037vw"}} className='transition-all duration-500  text-5xl text-black-200 text-justify '>
                  {children}
-                <ArrowRight className='inline sm:size-12 ' />
+                <ArrowRight strokeWidth={1.5} className='inline sm:size-12 stroke-gray-800 ' />
             </m.h1>
         </div>
     )
