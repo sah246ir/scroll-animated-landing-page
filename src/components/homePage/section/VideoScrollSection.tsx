@@ -4,8 +4,7 @@ import SmartParagraph from '../../smartParagraph';
 import Button from '../../buttons/Button';
 import { Link } from 'react-router-dom';
 
-const vid = require("../../../media/showreel.mp4");
-const logo = require("../../../media/logo.png");
+const vid = require("../../../media/showreel.mp4"); 
 
 const VideoScrollSection = () => {
   const containerref = useRef<HTMLDivElement>(null);
